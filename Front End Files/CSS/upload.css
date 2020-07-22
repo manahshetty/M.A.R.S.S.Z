@@ -1,0 +1,36 @@
+#form{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    border-style: double;
+    padding: 50px;
+}
+
+#logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1536px;
+    background-color: black;
+    justify-content: right;
+}
+
+
+#form_parent{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-family: 'Gayathri', sans-serif;
+}
+
+#btn{
+    width: 300px;
+    height: 45px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Gayathri', sans-serif;
+}
