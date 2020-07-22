@@ -1,0 +1,225 @@
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/quiz_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+  </head>
+
+  <body background="../IMAGES/download1.jpg">
+    <div id="logo">
+      <img src="../IMAGES/logo.png" id="pic">
+      <div class="container-top">
+        <h1>Quiz Names</h1>
+      <img src="../IMAGES/logo2.jpg" id="logo_pic">
+    </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container-mid">
+
+    <div class="container-profile">
+      <img
+        class="profile-image"
+        src="../IMAGES/profile_image.png"
+        alt="user"
+      />
+      <h3>Richard Parker</h3>
+      <h6>New York</h6>
+    </div>
+
+    <div class="container-cards">
+      <button id="button0" class="btn" onclick="buttonClick(this.id)">Clue 1</button>
+      <button id="button1" class="btn" onclick="buttonClick(this.id)">Clue 2</button>
+      <button id="button2" class="btn" onclick="buttonClick(this.id)">Clue 3</button>
+      <button id="button3" class="btn" onclick="buttonClick(this.id)">Clue 4</button>
+      <button id="button4" class="btn" onclick="buttonClick(this.id)">Clue 5</button>
+      <br>
+      <button id="button5" class="btn" onclick="buttonClick(this.id)">Clue 6</button>
+      <button id="button6" class="btn" onclick="buttonClick(this.id)">Clue 7</button>
+      <button id="button7" class="btn" onclick="buttonClick(this.id)">Clue 8</button>
+      <button id="button8" class="btn" onclick="buttonClick(this.id)">Clue 9</button>
+      <button id="button9" class="btn" onclick="buttonClick(this.id)">Clue 10</button>
+      <br>
+      <button id="button10" class="btn" onclick="buttonClick(this.id)">Clue 11</button>
+      <button id="button11" class="btn" onclick="buttonClick(this.id)">Clue 12</button>
+      <button id="button12" class="btn" onclick="buttonClick(this.id)">Clue 13</button>
+      <button id="button13" class="btn" onclick="buttonClick(this.id)">Clue 14</button>
+      <button id="button14" class="btn" onclick="buttonClick(this.id)">Clue 15</button>
+      <br>
+      <button id="button15" class="btn" onclick="buttonClick(this.id)">Clue 16</button>
+      <button id="button16" class="btn" onclick="buttonClick(this.id)">Clue 17</button>
+      <button id="button17" class="btn" onclick="buttonClick(this.id)">Clue 18</button>
+      <button id="button18" class="btn" onclick="buttonClick(this.id)">Clue 19</button>
+      <button id="button19" class="btn" onclick="buttonClick(this.id)">Clue 20</button>
+      <br>
+      <button id="button20" class="btn" onclick="buttonClick(this.id)">Clue 21</button>
+      <button id="button21" class="btn" onclick="buttonClick(this.id)">Clue 22</button>
+      <button id="button22" class="btn" onclick="buttonClick(this.id)">Clue 23</button>
+      <button id="button23" class="btn" onclick="buttonClick(this.id)">Clue 24</button>
+      <button id="button24" class="btn" onclick="buttonClick(this.id)">Clue 25</button>
+    </div>
+
+    <div class="container-log">
+      Game Log
+      <h4 id="log-text"></h4>
+    </div>
+
+  </div>
+
+    <div class="container-bottom">
+      <div>
+        <h1>Score Board </h1>
+        <h1 id="score">0</h1>
+      </div>
+      <h1 id="h1Question"> </h1>
+      <button class="next-button" id="next" onclick="nextQuestion()"> Next Question </button>
+    </div>
+
+    <script type="text/javascript">
+
+      var questions = {q0:"Question 1", q1:"Question 2", q2:"Question 3", q3:"Question 4"};
+      var answers = {q0:"Clue 1", q1:"Clue 2", q2:"Clue 3", q3:"Clue 4"};
+
+      var i = 0;
+
+      var score=0;
+      var scoreElement = document.getElementById('score');
+      var logText =document.getElementById('log-text');
+
+        ques = document.getElementById("h1Question");
+        var str = "q" + i;
+        ques.innerHTML = questions[str];
+        var ans = str[1];
+
+        function buttonClick(clicked_ID) {
+
+            switch(ans){
+
+              case '0': if(clicked_ID == "button0"){
+                                document.getElementById('button0').style.background = "url('..//IMAGES/green.jpg') no-repeat top left";
+                                score+=4;
+                                scoreElement.innerHTML = score;
+                                logText.innerHTML+="Correct Card - 4 points gained";
+                                logText.innerHTML+="<br />";
+                          }
+                          else{
+                                var num1 = clicked_ID[6];
+                                var num2 = clicked_ID[7];
+                                if(num2==undefined){var ele = "button" + num1;}
+                                else{var ele = "button" + num1 + num2;}
+                                document.getElementById(ele).style.background = "url('../IMAGES/wrong1.jpg') no-repeat top left";
+                                score-=2;
+                                scoreElement.innerHTML = score;
+                                logText.innerHTML+="Wrong Card - 2 points deducted";
+                                logText.innerHTML+="<br />";
+                          }
+                          break;
+
+              case '1': if(clicked_ID == "button1"){
+                                document.getElementById('button1').style.background = "url('../IMAGES/green.jpg') no-repeat top left";
+                                score+=4;
+                                scoreElement.innerHTML = score;
+                                logText.innerHTML+="<br />";
+                          }
+                          else{
+                                var num1 = clicked_ID[6];
+                                var num2 = clicked_ID[7];
+                                if(num2==undefined){var ele = "button" + num1;}
+                                else{var ele = "button" + num1 + num2;}
+                                document.getElementById(ele).style.background = "url('../IMAGES/wrong1.jpg') no-repeat top left";
+                                score-=2;
+                                scoreElement.innerHTML = score;
+                                logText.innerHTML+="<br />";
+                          }
+                          break;
+
+              case '2': if(clicked_ID == "button2"){
+                                document.getElementById('button2').style.background = "url('../IMAGES/green.jpg') no-repeat top left";
+                                score+=4;
+                                scoreElement.innerHTML = score;
+                                logText.innerHTML+="<br />";
+                          }
+                          else{
+                                var num1 = clicked_ID[6];
+                                var num2 = clicked_ID[7];
+                                if(num2==undefined){var ele = "button" + num1;}
+                                else{var ele = "button" + num1 + num2;}
+                                document.getElementById(ele).src = "url('../IMAGES/wrong1.jpg') no-repeat top left";
+                                score-=2;
+                                scoreElement.innerHTML = score;
+                                logText.innerHTML+="<br />";
+                          }
+                          break;
+
+              case '3': if(clicked_ID == "button3"){
+                                document.getElementById('button3').style.background = "url('../IMAGES/green.jpg') no-repeat top left";
+                                score+=4;
+                                scoreElement.innerHTML = score;
+                                logText.innerHTML+="<br />";
+                          }
+                          else{
+                                var num1 = clicked_ID[6];
+                                var num2 = clicked_ID[7];
+                                if(num2==undefined){var ele = "button" + num1;}
+                                else{var ele = "button" + num1 + num2;}
+                                document.getElementById(ele).style.background = "url('../IMAGES/wrong1.jpg') no-repeat top left";
+                                score-=2;
+                                scoreElement.innerHTML = score;
+                                logText.innerHTML+="<br />";
+                          }
+                          break;
+
+              default: break;
+
+              }
+
+        }
+
+        function nextQuestion(){
+
+              if(i>=3){
+                ques.innerHTML = "Your Final Score";
+              }
+
+              else{
+                i = i+1;
+                str = "q" + i;
+                ques.innerHTML = questions[str];
+                ans = str[1];
+              }
+
+              document.getElementById('button0').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button1').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button2').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button3').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button4').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button5').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button6').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button7').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button8').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button9').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button10').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button11').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button12').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button13').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button14').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button15').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button16').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button17').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button18').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button19').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button20').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button21').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button22').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button23').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button24').style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+
+        }
+
+    </script>
+
+  </body>
+
+</html>
