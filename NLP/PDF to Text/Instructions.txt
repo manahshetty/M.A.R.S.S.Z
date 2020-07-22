@@ -1,0 +1,9 @@
+We need Text Files from the PDFs of the Educational Content we are making our game from.
+To do that, we need to get PDFs from our source, which is right now NCERT Official Website
+
+We are taking PDFs of each chapter, from a Grade from a Subject, to make a game for that.
+
+To get Text file from PDF:
+
+1. Convert PDF into Images - Run Python File with all Required Libraries 
+2. Convert Images into Text Files - Run Python File with all Required Libraries & Tesseract Engine for Optical Character Recognition
