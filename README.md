@@ -55,7 +55,22 @@ A student is presented with a catalog of lectures that are 'grade', 'subject' an
 
 ### CONFIGURATION INSTRUCTIONS
 
+Tesseract OCR Software which will be Installed on our Server
+
+We are using XAMPP version 7.3.1 for creating a webserver(localhost) and a database(phpMyAdmin) to store the user’s information.
+
 ### INSTALLATION INSTRUCTIONS
+
+Installation of all libraries with specific versions as mentioned in Requirements.txt File
+
+(Mentioning here for Convienience)
+
+nltk==3.4.4
+fitz==0.0.1.dev2
+pyenchant==3.1.1
+pytesseract==0.3.4
+spacy==2.3.2
+
 
 ### OPERATING INSTRUCTIONS
 
@@ -91,6 +106,13 @@ The upload page is one to be specifically used by english teachers, to upload th
       
 -> Back End Files:
 
+sign_up.php : In the backend file of signup page first we are connecting to the database, then we are retrieving data send by user via the frontend, we are checking whether the user has filled all the required fields. 
+Then we are comparing the two passwords entered by the user for confirmation and if they are not we are telling the user to fill up again else if the passwords are same then we are storing the data inside the specific table in the database where we have two tables for two types of user i.e. student and teacher.  Then we redirect the user to homepage of our website. After the successful signup the session for present user will start and his name and email will be shown in the homepage. Now if the user is already a registered user of our website then user will go to login page. 
+log_in.php: In the backend of the login page we retrieve email, password and the type of our user, then we will compare the email and password given by the user with all the registered emails and their corresponding password in the database and if the comparison is successful then the user will get redirected to homepage of our website else we will post a message that user’s credential didn’t match.   
+index.php: Used for Redirecting to this file after successful Login or Signup
+
+signup.php & login.php are frontend files linked to Backend
+
 -> NLP:
    - PDF to Text
       Includes the Python code to convert any PDF file to Text for further processing.
@@ -112,4 +134,23 @@ The upload page is one to be specifically used by english teachers, to upload th
 
 ### KNOWN BUGS
 
+All 
+
 ### TROUBLESHOOTING
+
+-> Backend:
+
+During signup we had a problem to specify  whether  user is student or teacher, so we included a radiobutton  to collect the data regarding type of the user and we made separate tables in the database for student and teacher and thus we successfully debugged the problem. 
+So in  login page we didn’t require a radiobutton to check the type of user as we already created two tables for student and teacher in the database. 
+We also tried to implement the backed logic of our login page using object oriented approach but were facing problems and hence  we implemented our logic to support procedural approach and finally we successfuly debugged  the error
+
+-> PDF & Image to Text:
+It was extremely difficult to get efficient & accurate results with Libraries like PyPDF2, to get text files from PDF. So we used OCR Software to get best results.
+However to convert PDF to Images was also inefficient with conventional libraries like pdf2image. However, after much searching, we found an extremely compact & efficient library in PyMuPDF
+
+-> NLP Scripts:
+Keyword extraction for generating games was extremely challenging, given the content of NCERT Sources. However we were able to sectionise chapters & came up with our own logic
+to efficiently fetch them.
+
+For the Synonyms Generator, Extracting Correct Words, which had at least 3 synonyms required a lot of Debugging, Trial & Testing. However, we managed to make our script 
+compatible with Word Lists Images
