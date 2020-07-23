@@ -1,0 +1,1 @@
+Contains Files for converting Word Lists to Text, parsing them using Natural Language Processing and getting words with their synonyms as an Output
