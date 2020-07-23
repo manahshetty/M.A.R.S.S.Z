@@ -1,1 +1,22 @@
 All Files for Frontend of our Website
+
+HTML:
+
+The homepage is the entrance to the website, where the user is required to login or signup, in compliance with the appropriate credentials. 
+The signup page igns the user up on the website to provide the user with personalized score trackers and quizzes, while the login page is used by the already registered users.
+
+The students who have logged into their accounts will then be able to choose a particular subject from a particular grade, in accordance with the quiz they need to take. This will then lead them to the main quiz page. 
+
+The quiz page provides the student with an interface to take the quiz with fun cards, a basic profile overview, a game log and a score tracker. The cards are hidden with clues for the questions which pop up every time the 'Next' button is clicked. The game log keeps a track of the user activity for the current quiz. The score card keeps a live track of the user's score to generate his grades towards the end.  The profile card presents the user's profile overview along with his quiz history.
+
+The upload page is one to be specifically used by english teachers, to upload the image of a word list, which suitably gets converted to a quiz using NLP processing.
+
+
+CSS: 
+
+A directory with all the styling sheets used for HTML pages which have been styled with fancy colors, images, layouts and fonts to fit different sizes of screens.
+
+
+IMAGES:
+
+A Resource directory of all the external media used to design pages.
