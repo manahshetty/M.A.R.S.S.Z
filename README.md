@@ -149,10 +149,12 @@ So in  login page we didn’t require a radiobutton to check the type of user as
 We also tried to implement the backed logic of our login page using object oriented approach but were facing problems and hence  we implemented our logic to support procedural approach and finally we successfuly debugged  the error
 
 -> PDF & Image to Text:
+
 It was extremely difficult to get efficient & accurate results with Libraries like PyPDF2, to get text files from PDF. So we used OCR Software to get best results.
 However to convert PDF to Images was also inefficient with conventional libraries like pdf2image. However, after much searching, we found an extremely compact & efficient library in PyMuPDF
 
 -> NLP Scripts:
+
 Keyword extraction for generating games was extremely challenging, given the content of NCERT Sources. However we were able to sectionise chapters & came up with our own logic
 to efficiently fetch them.
 
@@ -160,4 +162,5 @@ For the Synonyms Generator, Extracting Correct Words, which had at least 3 synon
 compatible with Word Lists Images
 
 -> Front End:
+
 The alignment of the div tags differed for different screen sizes causing a problematic display of the UI on certain screen sizes. Using viewport seems to be solving this issue.
