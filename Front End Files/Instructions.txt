@@ -3,7 +3,7 @@ All Files for Frontend of our Website
 HTML:
 
 The homepage is the entrance to the website, where the user is required to login or signup, in compliance with the appropriate credentials. 
-The signup page igns the user up on the website to provide the user with personalized score trackers and quizzes, while the login page is used by the already registered users.
+The signup page signs the user up on the website to provide the user with personalized score trackers and quizzes, while the login page is used by the already registered users.
 
 The students who have logged into their accounts will then be able to choose a particular subject from a particular grade, in accordance with the quiz they need to take. This will then lead them to the main quiz page. 
 
