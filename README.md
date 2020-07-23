@@ -40,7 +40,7 @@ A student is presented with a catalog of lectures that are 'grade', 'subject' an
    - PDF to Text
       Includes the Python code to convert any PDF file to Text for further processing.
    - Extract.ipynb
-      Includes the Jupyter notebook file with the NLP application to extract keywords from a text file input.
+      Includes the Jupyter notebook file with the NLP application to extract keywords from a text file input to generate quizzes.
 
 
 ### COPYRIGHT
