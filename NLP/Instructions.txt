@@ -1,0 +1,7 @@
+The folder has the following files :
+-> PDF to Text :
+    - Contains the codes to convert a PDF file to txt file
+-> Synonyms Generator :
+    - Code to generate synonyms
+-> Extract.ipynb
+    -This notebook hold the code to generate keywords from a given text file, using Natural Language Processing
