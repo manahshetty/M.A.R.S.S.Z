@@ -1,5 +1,5 @@
  <?php
-include 'PHP\sign_up.php';
+include 'sign_up.php';
 ?> 
 <!DOCTYPE html>
 <html>
