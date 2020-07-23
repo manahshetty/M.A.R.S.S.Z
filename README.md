@@ -13,7 +13,7 @@ The site is user-specific. We have created an option for the user to log in as a
 On signing in, a teacher would be presented with an option to upload a word list to generate 'Find the Synonyms' game for the English Subject. This will be processed in real time, using the scripts on our server, and will generate the game, which can be played by her students. 
 A Future scope for this is to have options enabled to monitor student progress as well as upload lectures with the relevant grade and subject tags. 
 
-A student is presented with a catalog of lectures that are 'grade', 'subject' and 'chapter' seggregated. Each section would thus potentially hold relevant videos. However, with the current scope, each section would present a game to the student. The gameplay is as follows:
+A student is presented with a catalog of lectures that are 'grade', 'subject' and 'chapter' seggregated. Each of these sections would present a game to the student. The gameplay is as follows:
 -> A student is presented with a deck of 25 cards with word-clues on them.
 -> The application generates a lecture specific key-phrase with a number. The number is a hint on the number of cards that relate to this keyphrase.
 -> The student then picks cards that he/she thinks relate to this keyphrase.
@@ -23,6 +23,7 @@ A student is presented with a catalog of lectures that are 'grade', 'subject' an
     - A black card implies end of game with deduction of points. There is one such card for every game.
 -> The test is on the students understanding of the concept and ability to relate the key terms.
 -> A leaderboard has been included to keep things interesting and build incentive.
+-> For the Find the Synonyms Game, the format is similar to above, except the clues are replaced by words, and the deck contains synonyms along with other non-synonym words.
 
 ### CONFIGURATION INSTRUCTIONS
 
