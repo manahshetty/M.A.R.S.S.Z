@@ -96,6 +96,8 @@ The upload page is one to be specifically used by english teachers, to upload th
 
 ### FILE MANIFEST
 
+You can also check out Individual Instructions.txt files in each folder to get a better grasp for the Flow of our Codes
+
 -> Front End Files:
    - CSS
       Includes the styling / formatting code for the website.
@@ -131,10 +133,12 @@ signup.php & login.php are frontend files linked to Backend
 	- eng_test4.txt is one of the I/P we used to generate Synonyms in testing
 
 ### COPYRIGHT
+We will procure a Liscence Shortly
 
 ### KNOWN BUGS
 
-All 
+All Code Scripts are Bug Free right now. However they all need to be linked up.
+We will troubleshoot & update this after their linking up.
 
 ### TROUBLESHOOTING
 
@@ -154,3 +158,6 @@ to efficiently fetch them.
 
 For the Synonyms Generator, Extracting Correct Words, which had at least 3 synonyms required a lot of Debugging, Trial & Testing. However, we managed to make our script 
 compatible with Word Lists Images
+
+-> Front End:
+The alignment of the div tags differed for different screen sizes causing a problematic display of the UI on certain screen sizes. Using viewport seems to be solving this issue.
