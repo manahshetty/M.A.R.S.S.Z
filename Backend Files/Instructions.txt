@@ -1,1 +1,2 @@
 Here are all Backend Files for the Website
+We have linked the frontend file of signup( signup.php ) with its backend file  sign_up.php and we have also linked the frontend of login(login.php) with its backend log_in.php. For running the signup page we are typing localhost/signup and for running the login page we are typing localhost/login in browser.
