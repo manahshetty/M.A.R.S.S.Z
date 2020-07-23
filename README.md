@@ -1,7 +1,20 @@
 # README
 
 We have created an Innovative & Fun approach to online education for the children of today, by using Natural Language Processing Techniques. The project looks at a website that generates fun assessment approaches to up student incentive to learn. The approach seeks to test and teach concepts in an innovative way while encouraging sharper concentration.
-We have incorporated 2 types of Games, based on subjects taught in Schools, for children across Grades from Ist to VIIIth. The First is a game generated from Subjects like Social Studies & Science. This system involves a deck of word clues consisting of all the key concepts from any given chapter from the subject. 
+We have incorporated 2 types of Games, based on subjects taught in Schools, for children across Grades from Ist to VIIIth.
+
+Before we get to the games, it is important to understand how are these different from any other standard games one can create with simple codes.
+The Beauty lies in the fact that these games are fully generated from the NLP scripts we have coded on our own, using existing open source libraries like spaCy & NLTK.
+
+The technical uniqueness of our website lies in 2 aspects:
+
+-> We have coded our own PDF to Text & Image to Text converter, using opensource OCR Software Tesseract
+
+-> We have used NLP Techniques to extract educational content from the PDF/ Image sources
+
+-> This makes our games scalable & unique, for we don't need teachers to manually read hundreds of pages to prepare QnA for games 
+
+The First is a game generated from Subjects like Social Studies & Science. This system involves a deck of word clues consisting of all the key concepts from any given chapter from the subject. 
 The assessment/gameplay requires a student to choose all the words that relate to a software generated keyword while avoiding certain 'Death Cards'. This aims to test the knowledge grasped by the student and his/her ability to relate and apply concepts taught.
 Not only this is made fun by a points system for right & wrong answers, but also it is exceptionally unique, as it is fully automatically generated using Natural Language Processing Scripts!
 The second game is compatible for all students across school, as it is based on the subject "English". Here, the teacher can upload an  image of a weekly word list provided in classrooms, and we generate a Find the Synonyms game from it!
