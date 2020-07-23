@@ -1,7 +1,7 @@
 # README
 
-We have created an Innovative & Fun approach to online education for the children of today, by using Natural Language Processing Techniques.The project looks at a website that generates fun assessment approaches to up student incentive to learn. The approach seeks to test and teach concepts in an innovative way while encouraging sharper concentration.
-We have incorporated 2 types of Games, based on subjects taught in Schools, for children across Grades from Ist to VIIIth. The First is a game generated from Subjects like Social Studies & Science. This system involves a deck of word clues consisting of all the key concepts from any given chapter from the Subject. 
+We have created an Innovative & Fun approach to online education for the children of today, by using Natural Language Processing Techniques. The project looks at a website that generates fun assessment approaches to up student incentive to learn. The approach seeks to test and teach concepts in an innovative way while encouraging sharper concentration.
+We have incorporated 2 types of Games, based on subjects taught in Schools, for children across Grades from Ist to VIIIth. The First is a game generated from Subjects like Social Studies & Science. This system involves a deck of word clues consisting of all the key concepts from any given chapter from the subject. 
 The assessment/gameplay requires a student to choose all the words that relate to a software generated keyword while avoiding certain 'Death Cards'. This aims to test the knowledge grasped by the student and his/her ability to relate and apply concepts taught.
 Not only this is made fun by a points system for right & wrong answers, but also it is exceptionally unique, as it is fully automatically generated using Natural Language Processing Scripts!
 The second game is compatible for all students across school, as it is based on the subject "English". Here, the teacher can upload an  image of a weekly word list provided in classrooms, and we generate a Find the Synonyms game from it!
@@ -9,7 +9,9 @@ The second game is compatible for all students across school, as it is based on 
 The USP of our Project lies in its implementation, as it can analyse PDFs & Images, to convert them to text, with a software fully written by us, and using NLP concepts, generate our games from that!
 This means that to scale it up, it is not required to manually scoure through Educational Content to generate Question & Answers for our Game. All that is required is the PDF or Images of Chapters of the Subject Books.
 ### PRODUCT FLOW
-The site is user-specific. On signing in, a teacher would be presented with options to monitor student progress as well as upload lectures with the relevant grade and subject tags. A teacher is also required to upload a PDF file of the chapter with every lecture.
+The site is user-specific. We have created an option for the user to log in as a student or as a teacher. The student can play the games, from a Menu of exisitng Subjects & Chapters pre-processed by us. This menu can easily be expanded with more PDFs on the subjects. We save immense processing time in keeping the generated keywords available to games, which can be dynamically played by students.
+On signing in, a teacher would be presented with an option to upload a word list to generate 'Find the Synonyms' game for the English Subject. This will be processed in real time, using the scripts on our server, and will generate the game, which can be played by her students. 
+A Future scope for this is to have options enabled to monitor student progress as well as upload lectures with the relevant grade and subject tags. 
 
 A student is presented with a catalog of lectures that are 'grade', 'subject' and 'chapter' seggregated. Each section would thus potentially hold relevant videos. However, with the current scope, each section would present a game to the student. The gameplay is as follows:
 -> A student is presented with a deck of 25 cards with word-clues on them.
