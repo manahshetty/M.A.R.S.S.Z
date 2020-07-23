@@ -66,9 +66,13 @@ Installation of all libraries with specific versions as mentioned in Requirement
 (Mentioning here for Convienience)
 
 nltk==3.4.4
+
 fitz==0.0.1.dev2
+
 pyenchant==3.1.1
+
 pytesseract==0.3.4
+
 spacy==2.3.2
 
 
