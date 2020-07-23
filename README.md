@@ -75,9 +75,19 @@ A student is presented with a catalog of lectures that are 'grade', 'subject' an
 -> NLP:
    - PDF to Text
       Includes the Python code to convert any PDF file to Text for further processing.
+      This required libraries mentioned in Requirements.txt & Tesseract .exe file for Optical Character Recognition
+      This is Done in 2 Step:
+	- PDF_to_Image.py converts the PDF into set of Images for each Page in PDF
+	- Image_to_Text.py converts those Images to text, which is appended to one Text File
+
    - Extract.ipynb
       Includes the Jupyter notebook file with the NLP application to extract keywords from a text file input.
 
+   - Synonyms Generator
+      This is done in 2 parts:
+	- First an Image of Word List is uploaded which is processed into text by WordList_to_Text.py
+	- Then words & synonyms are generated from the text file by Synonym Generator.py
+	- eng_test4.txt is one of the I/P we used to generate Synonyms in testing
 
 ### COPYRIGHT
 
