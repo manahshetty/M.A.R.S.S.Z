@@ -1,1 +1,4 @@
 Contains Files for converting Word Lists to Text, parsing them using Natural Language Processing and getting words with their synonyms as an Output
+
+First Run WordLists_to_text.py, with Required Image of Word List
+Then Run Synonym-Generator.py on that, with required Input Text File
