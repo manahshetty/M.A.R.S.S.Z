@@ -12,8 +12,8 @@ A student is presented with a catalog of lectures that are 'grade', 'subject' an
 -> The student then picks cards that he/she thinks relate to this keyphrase.
     - If correct, the card turns green, and points are awarded.
     - There are two possibilities on the selection of a wrong card :
-      - A white card implies deduction of points. There are 12 cards pre-determined as white.
-      - A black card implies end of game with deduction of points. There is one such card for every game.
+    - A white card implies deduction of points. There are 12 cards pre-determined as white.
+    - A black card implies end of game with deduction of points. There is one such card for every game.
 -> The test is on the students understanding of the concept and ability to relate the key terms.
 -> A leaderboard has been included to keep things interesting and build incentive.
 
@@ -33,8 +33,10 @@ A student is presented with a catalog of lectures that are 'grade', 'subject' an
       Includes all the HTML files for the layout of the website.
    - Images
       Includes all the images.
+      
 -> Back End Files:
--> NLP
+
+-> NLP:
    - PDF to Text
       Includes the Python code to convert any PDF file to Text for further processing.
    - Extract.ipynb
