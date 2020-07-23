@@ -23,7 +23,13 @@ The USP of our Project lies in its implementation, as it can analyse PDFs & Imag
 This means that to scale it up, it is not required to manually scoure through Educational Content to generate Question & Answers for our Game. All that is required is the PDF or Images of Chapters of the Subject Books.
 ### PRODUCT FLOW
 The site is user-specific. We have created an option for the user to log in as a student or as a teacher. The student can play the games, from a Menu of existing Subjects & Chapters pre-processed by us. This menu can easily be expanded with more PDFs on the subjects. We save immense processing time in keeping the generated keywords available to games, which can be dynamically played by students.
+
 On signing in, a teacher would be presented with an option to upload a word list to generate 'Find the Synonyms' game for the English Subject. This will be processed in real time, using the scripts on our server, and will generate the game, which can be played by her students. 
+
+-> So we have automated the process of feeding in an input in form of an image of Vocabulary Words Schools often provide, to generate the Game!
+
+-> This has also been tested on various Images of Vocabulary Lists from the Net. More information on this lies in the NLP Folder
+
 A Future scope for this is to have options enabled to monitor student progress as well as upload lectures with the relevant grade and subject tags. 
 
 A student is presented with a catalog of lectures that are 'grade', 'subject' and 'chapter' seggregated. Each of these sections would present a game to the student. The gameplay is as follows:
