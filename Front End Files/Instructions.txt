@@ -1,4 +1,4 @@
-All Files for Frontend of our Website
+All Files for the Frontend of our Website
 
 HTML:
 
