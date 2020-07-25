@@ -1,0 +1,23 @@
+###FILE MANIFEST
+-> Chapter_3.txt
+   This holds the sample text file for input to the python code.
+-> Extract_Keywords.ipynb
+   This contains the python code for the extraction of keywords from a textfile.
+   The code has been well commented to explain working and logic.
+   The code sectionalizes the text and pickskeywords from each section which is then written to a text file for further use.
+-> Output.txt
+   This is the output file after code execution. It holds the questions and the clues for the game. The question, answers and other options are all present as separate lines, in that order respectively and repeats for five questions.
+   i.e :
+   Question 1
+   Answers
+   Other Options
+   Question 2
+   Answers
+   Other Options
+   .
+   .
+   Question 5
+   Answers
+   Other Options
+   
+   
