@@ -9,6 +9,10 @@ The students who have logged into their accounts will then be able to choose a p
 
 The quiz page provides the student with an interface to take the quiz with fun cards, a basic profile overview, a game log and a score tracker. The cards are hidden with clues for the questions which pop up every time the 'Next' button is clicked. The game log keeps a track of the user activity for the current quiz. The score card keeps a live track of the user's score to generate his grades towards the end.  The profile card presents the user's profile overview along with his quiz history.
 
+Separate pages have been made to explain how the website is to be used by teachers and students.
+
+A profile page will enable the students to keep a track of their scores.
+
 The upload page is one to be specifically used by english teachers, to upload the image of a word list, which suitably gets converted to a quiz using NLP processing.
 
 
