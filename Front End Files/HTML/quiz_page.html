@@ -1,0 +1,245 @@
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/quiz_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+  </head>
+
+  <body background="../IMAGES/download1.jpg" >
+
+    <div id="logo">
+      <img src="../IMAGES/logo.png" id="pic">
+      <div class="container-top">
+        <p style="color:white; text-align: left; padding-left: 6%; font-size: 50px;">Quiz Names</p>
+        <img src="../IMAGES/logo2.jpg" id="logo_pic">
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container-mid">
+
+      <div class="container-profile">
+        <img
+          class="profile-image"
+          src="../IMAGES/profile_image.png"
+          alt="user"
+        />
+        <h3>Richard Parker</h3>
+        <h6>New York</h6>
+        <button onclick="location.href='homepage.html'">Go Back Home</button>
+      </div>
+   
+    <div class="container-cards">
+      <button id="button0" class="btn" value="1" onclick="buttonClick(this.id)">Clue 1</button>
+      <button id="button1" class="btn" value="1" onclick="buttonClick(this.id)">Clue 2</button>
+      <button id="button2" class="btn" value="1" onclick="buttonClick(this.id)">Clue 3</button>
+      <button id="button3" class="btn" value="1" onclick="buttonClick(this.id)">Clue 4</button>
+      <button id="button4" class="btn" value="1" onclick="buttonClick(this.id)">Clue 5</button>
+      <br>
+      <button id="button5" class="btn" value="1" onclick="buttonClick(this.id)">Clue 6</button>
+      <button id="button6" class="btn" value="1" onclick="buttonClick(this.id)">Clue 7</button>
+      <button id="button7" class="btn" value="1" onclick="buttonClick(this.id)">Clue 8</button>
+      <button id="button8" class="btn" value="1" onclick="buttonClick(this.id)">Clue 9</button>
+      <button id="button9" class="btn" value="1" onclick="buttonClick(this.id)">Clue 10</button>
+      <br>
+      <button id="button10" class="btn" value="1" onclick="buttonClick(this.id)">Clue 11</button>
+      <button id="button11" class="btn" value="1" onclick="buttonClick(this.id)">Clue 12</button>
+      <button id="button12" class="btn" value="1" onclick="buttonClick(this.id)">Clue 13</button>
+      <button id="button13" class="btn" value="1" onclick="buttonClick(this.id)">Clue 14</button>
+      <button id="button14" class="btn" value="1" onclick="buttonClick(this.id)">Clue 15</button>
+      <br>
+      <button id="button15" class="btn" value="1" onclick="buttonClick(this.id)">Clue 16</button>
+      <button id="button16" class="btn" value="1" onclick="buttonClick(this.id)">Clue 17</button>
+      <button id="button17" class="btn" value="1" onclick="buttonClick(this.id)">Clue 18</button>
+      <button id="button18" class="btn" value="1" onclick="buttonClick(this.id)">Clue 19</button>
+      <button id="button19" class="btn" value="1" onclick="buttonClick(this.id)">Clue 20</button>
+      <br>
+      <button id="button20" class="btn" value="1" onclick="buttonClick(this.id)">Clue 21</button>
+      <button id="button21" class="btn" value="1" onclick="buttonClick(this.id)">Clue 22</button>
+      <button id="button22" class="btn" value="1" onclick="buttonClick(this.id)">Clue 23</button>
+      <button id="button23" class="btn" value="1" onclick="buttonClick(this.id)">Clue 24</button>
+      <button id="button24" class="btn" value="1" onclick="buttonClick(this.id)">Clue 25</button>
+    </div>
+
+    <div class="container-log">
+      Game Log
+      <h4 id="log-text"></h4>
+    </div>
+
+  </div>
+
+  <div class="container-bottom">
+    <div style="padding-left: 2%;">
+      <h1>Score Board</h1>
+      <h1 id="score">0</h1>
+    </div>
+    <h1 id="h1Question"> </h1>
+    <button class="next-button" id="next" value="1" onclick="nextQuestion()"> Next Question </button>
+  </div>
+
+  <script type="text/javascript">
+
+    //Arrays of questions, answers and options.
+    var questions = {q0:"Question 1 : how do we know about these people", q1:"Question 2: finding out about fire", q2:"Question 3: a changing environment",
+                     q3:"Question 4: a settled new way of life", q4:"Question 5: elsewhere cave paintings in france"};
+    var answers = {q0:['paintings', 'walls',  'bhimbetka', 'southern uttar pradesh' , 'narmada valley'],
+                   q1:['mesolithic', 'kurnool', 'sickles', 'wood', 'neolithic'],
+                   q2:['warm conditions', 'domestication', 'grasslands', 'herding', 'grain bearing'],
+                   q3:['earthen pots', 'pit houses', 'mortars', 'burzahom', 'cooking hearths'],
+                   q4:['charcoal', 'bright colours', 'ochre', 'iron', 'aurochs']
+                   };
+
+    var extra = [
+      ['rice', 'fishing', 'huts', 'grind', 'fire', 'wheat', 'human history', 'climate', 'palaeolithic', 'herds', 'lowery middle', 'farmers', 'greek words', 'antelope', 'microliths', 'farming', 'period', 'ripe', 'bolan pass', 'cooking'],
+      ['cooking', 'storage', 'fire', 'mehrgarh', 'bolan pass', 'term', 'greek words', 'materials', 'human history', 'span', 'period', 'huts', 'compartments', 'lowery middle', 'past', 'cotton', 'grind', 'palaeolithic', 'villages', 'cloth'],
+      ['cotton', 'cloth', 'environment', 'barley', 'farmers', 'tame', 'climate', 'villages', 'grind', 'sheep', 'farming', 'herds', 'bolan pass', 'materials', 'disease', 'wheat', 'mehrgarh', 'attacks', 'compartments', 'storage'],
+      ['disease', 'wheat', 'span', 'shift', 'sheep', 'goat', 'fire', 'farming', 'human history', 'antelope', 'herds', 'term', 'period', 'ripe', 'microliths', 'barley', 'attacks', 'breeding', 'past', 'farmers'],
+      ['shift', 'breeding', 'fishing', 'rice', 'attacks', 'huts', 'past', 'materials', 'period', 'climate', 'tame', 'farmers', 'cooking', 'microliths', 'sheep', 'environment', 'lowery middle', 'grind', 'disease', 'mehrgarh']
+    ];
+
+    var ans = [
+      ['paintings', 'walls',  'bhimbetka', 'southern uttar pradesh' , 'narmada valley'],
+      ['mesolithic', 'kurnool', 'sickles', 'wood', 'neolithic'],
+      ['warm conditions', 'domestication', 'grasslands', 'herding', 'grain bearing'],
+      ['earthen pots', 'pit houses', 'mortars', 'burzahom', 'cooking hearths'],
+      ['charcoal', 'bright colours', 'ochre', 'iron', 'aurochs']
+    ];
+      
+    
+    var cards = extra[0].concat(ans[0]);                                        //Array of all cards for a particular question.
+    shuffle(cards);                                                             //Shuffle the card list to randomize.
+    for(var x=0;x<25;x++)                                                       //Add clue names onto cards
+    {
+      document.getElementById('button'+ x).innerHTML = '' + cards[x];
+    }
+
+    var i = 0;                                                                  //Keep track of question number
+    var tries = 0;                                                              //Keep track of attempts
+
+    var score=0;                                                                //Keep track of scores
+    var scoreElement = document.getElementById('score');
+    var logText =document.getElementById('log-text');
+
+    ques = document.getElementById("h1Question");                               //Get question
+    var str = "q" + i;
+    ques.innerHTML = questions[str].toUpperCase();                              //Rewrite question
+
+    function buttonClick(clicked_ID) 
+    {
+      var btn = document.getElementById(clicked_ID);
+      if (btn.value == "1")                                                     //Ensure re-click of button isn't counted as a try.
+      {
+        btn.value = "0"
+        var guess = document.getElementById(clicked_ID).innerHTML;              //Extract user answer
+     
+      
+        if(answers['q' + i].includes(guess) == true)                            //Check user answer
+        {
+        document.getElementById(clicked_ID).style.background = "url('..//IMAGES/green.jpg') no-repeat top left";      //Mark correct
+        score+=4;
+        scoreElement.innerHTML = score;
+        logText.innerHTML+="Correct Card - 4 points gained";
+        logText.innerHTML+="<br />";
+        tries++;
+
+        if(tries == 5)                                                          //Next question
+        {
+          display();
+          setTimeout( () => {
+          i++;
+          var cards = extra[i].concat(ans[i]);
+          shuffle(cards);
+          for(var c=0;c<25;c++)                                                 //Replace cards
+          {
+            document.getElementById('button'+ c).innerHTML = '' + cards[c];
+            document.getElementById('button'+ c).style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+            document.getElementById('button'+ c).value = "1";
+          }
+          document.getElementById("next").value = "1";
+          ques.innerHTML = questions["q" + i].toUpperCase();
+          tries = 0;
+          return;
+          }, 3000);
+        }
+        }
+
+        else
+        {
+          document.getElementById(clicked_ID).style.background = "url('../IMAGES/wrong1.jpg') no-repeat top left";
+          score-=2;
+          scoreElement.innerHTML = score;
+          logText.innerHTML+="Wrong Card - 2 points deducted";
+          logText.innerHTML+="<br />";
+          tries++;
+          if(tries == 5)
+          {
+            display();
+            setTimeout( () => {            
+            i++;
+            var cards = extra[i].concat(ans[i]);
+            shuffle(cards);
+            for(var b=0;b<25;b++)
+            {
+              document.getElementById('button'+ b).innerHTML = '' + cards[b];
+              document.getElementById('button'+ b).style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+              document.getElementById('button'+ b).value = "1";
+            }
+            
+            ques.innerHTML = questions["q" + i].toUpperCase();
+            tries = 0;
+            return;
+            }, 3000);
+          }
+      }
+    }
+      
+}
+
+      function nextQuestion()                                                 //Reset deck to next question
+      {
+        if(i>=4)                                                              //End of game
+        {
+          ques.innerHTML = "Your Final Score";
+        }
+
+        else
+        {
+          i = i+1;
+          str = "q" + i;
+          ques.innerHTML = questions[str].toUpperCase();
+        }
+
+        var cards = extra[i].concat(ans[i]);                                  //Reset cards
+        for(var c=0;c<25;c++)
+        {
+          document.getElementById('button'+ c).innerHTML = '' + cards[c];
+          document.getElementById('button'+ c).style.background = "url('../IMAGES/download.jpg') no-repeat top left";
+          document.getElementById('button'+ c).value = "1";
+        }
+        tries = 0;
+      }
+
+      function display()                                                      //Display answers
+      {
+        for (var c=0; c<25; c++)
+        {
+          var btn = document.getElementById('button'+ c);
+          word = btn.innerHTML;
+          if (answers['q' + i].includes(word) == true)
+          {
+            btn.style.background = "url('..//IMAGES/green.jpg') no-repeat top left";
+          }
+        }
+        return;
+      }
+
+      function shuffle(cards)                                                 //Randomiize cards
+      {
+        cards.sort(() => Math.random() - 0.5);
+      }
+
+    </script>
+  </body>
+</html>
