@@ -1,7 +1,11 @@
 # README
 
+###UPDATE
+
+The Final Submission will be in form of a link to our Website
+
 We have created an Innovative & Fun approach to online education for the children of today, by using Natural Language Processing Techniques. The project looks at a website that generates fun assessment approaches to up student incentive to learn. The approach seeks to test and teach concepts in an innovative way while encouraging sharper concentration.
-We have incorporated 2 types of Games, based on subjects taught in Schools, for children across Grades from Ist to VIIIth.
+We have incorporated 2 types of Games, based on subjects taught in Schools, for children across Grades from Vth to VIIIth, with English Subject available for students of all grade.
 
 Before we get to the games, it is important to understand how are these different from any other standard games one can create with simple codes.
 The Beauty lies in the fact that these games are fully generated from the NLP scripts we have coded on our own, using existing open source libraries like spaCy & NLTK.
@@ -15,7 +19,7 @@ The technical uniqueness of our website lies in 2 aspects:
 -> This makes our games scalable & unique, for we don't need teachers to manually read hundreds of pages to prepare QnA for games 
 
 The First is a game generated from Subjects like Social Studies & Science. This system involves a deck of word clues consisting of all the key concepts from any given chapter from the subject. 
-The assessment/gameplay requires a student to choose all the words that relate to a software generated keyword while avoiding certain 'Death Cards'. This aims to test the knowledge grasped by the student and his/her ability to relate and apply concepts taught.
+The assessment/gameplay requires a student to choose all the words that relate to a software generated keyword as clues. This aims to test the knowledge grasped by the student and his/her ability to relate and apply concepts taught.
 Not only this is made fun by a points system for right & wrong answers, but also it is exceptionally unique, as it is fully automatically generated using Natural Language Processing Scripts!
 The second game is compatible for all students across school, as it is based on the subject "English". Here, the teacher can upload an  image of a weekly word list provided in classrooms, and we generate a Find the Synonyms game from it!
 
@@ -42,14 +46,15 @@ A student is presented with a catalog of lectures that are 'grade', 'subject' an
 
     - If correct, the card turns green, and points are awarded.
 
-    - There are two possibilities on the selection of a wrong card :
+    - On the selection of a wrong card, some points are deducted.
 
-    - A white card implies deduction of points. There are 12 cards pre-determined as white.
-    - A black card implies end of game with deduction of points. There is one such card for every game.
+    - At the end of each question, the user is shown the correct answers, so as to ensure he learnt the concept
+
+    
 
 -> The test is on the students understanding of the concept and ability to relate the key terms.
 
--> A leaderboard has been included to keep things interesting and build incentive.
+-> A leaderboard will be included as a future scope, to make things interesting and build incentive.
 
 -> For the Find the Synonyms Game, the format is similar to above, except the clues are replaced by words, and the deck contains synonyms along with other non-synonym words.
 
@@ -72,7 +77,7 @@ fitz==0.0.1.dev2
 pyenchant==3.1.1
 
 pytesseract==0.3.4
-
+	
 spacy==2.3.2
 
 
@@ -114,7 +119,9 @@ You can also check out Individual Instructions.txt files in each folder to get a
 
 sign_up.php : In the backend file of signup page first we are connecting to the database, then we are retrieving data send by user via the frontend, we are checking whether the user has filled all the required fields. 
 Then we are comparing the two passwords entered by the user for confirmation and if they are not we are telling the user to fill up again else if the passwords are same then we are storing the data inside the specific table in the database where we have two tables for two types of user i.e. student and teacher.  Then we redirect the user to homepage of our website. After the successful signup the session for present user will start and his name and email will be shown in the homepage. Now if the user is already a registered user of our website then user will go to login page. 
+
 log_in.php: In the backend of the login page we retrieve email, password and the type of our user, then we will compare the email and password given by the user with all the registered emails and their corresponding password in the database and if the comparison is successful then the user will get redirected to homepage of our website else we will post a message that user’s credential didn’t match.   
+
 index.php: Used for Redirecting to this file after successful Login or Signup
 
 signup.php & login.php are frontend files linked to Backend
@@ -123,8 +130,10 @@ signup.php & login.php are frontend files linked to Backend
    - PDF to Text
       Includes the Python code to convert any PDF file to Text for further processing.
       This required libraries mentioned in Requirements.txt & Tesseract .exe file for Optical Character Recognition
-      This is Done in 2 Step:
+      This is Done in 2 Steps:
+
 	- PDF_to_Image.py converts the PDF into set of Images for each Page in PDF
+
 	- Image_to_Text.py converts those Images to text, which is appended to one Text File
 
    - Extract.ipynb
@@ -133,7 +142,9 @@ signup.php & login.php are frontend files linked to Backend
    - Synonyms Generator
       This is done in 2 parts:
 	- First an Image of Word List is uploaded which is processed into text by WordList_to_Text.py
+
 	- Then words & synonyms are generated from the text file by Synonym Generator.py
+
 	- eng_test4.txt is one of the I/P we used to generate Synonyms in testing
 
 ### COPYRIGHT
