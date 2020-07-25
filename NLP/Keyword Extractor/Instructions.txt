@@ -1,4 +1,4 @@
-###FILE MANIFEST
+FILE MANIFEST
 -> Chapter_3.txt
    This holds the sample text file for input to the python code.
 -> Extract_Keywords.ipynb
