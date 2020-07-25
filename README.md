@@ -50,7 +50,7 @@ A student is presented with a catalog of lectures that are 'grade', 'subject' an
 
     - On the selection of a wrong card, some points are deducted.
 
-    - At the end of each question, the user is shown the correct answers, so as to ensure he learnt the concept
+    - At the end of each question, the user is shown the correct answers, so as to ensure She/He learnt the concept
 
     
 
