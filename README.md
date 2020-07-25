@@ -4,6 +4,8 @@
 
 The Final Submission will be in form of a link to our Website
 
+### INTRO
+
 We have created an Innovative & Fun approach to online education for the children of today, by using Natural Language Processing Techniques. The project looks at a website that generates fun assessment approaches to up student incentive to learn. The approach seeks to test and teach concepts in an innovative way while encouraging sharper concentration.
 We have incorporated 2 types of Games, based on subjects taught in Schools, for children across Grades from Vth to VIIIth, with English Subject available for students of all grade.
 
