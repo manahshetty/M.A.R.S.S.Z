@@ -1,0 +1,44 @@
+#logo{
+    position: absolute;
+    top: 53px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    justify-content: right;
+}
+
+#pic{
+    align-self: center;
+}
+
+.correct{
+  top:100px;
+}
+
+.container-profile {
+   position: fixed;
+   left: 30%;
+   height: 300px;
+   top: 40%;
+   width: 40%;
+   text-align:center;
+   padding: 20px;
+   background-image: url("../IMAGES/login_back.png");
+   opacity: 1;
+   border: black;
+   color: white;
+   border-style: inset;
+   font-weight: bold;
+  }
+
+.div-out {
+    background-color: black;
+    height: 400px;
+    width: 50%;
+    top: 32.5%;
+    text-align:center;
+    position: fixed;
+    left: 25%;
+    color: black;
+    font-weight: bold;
+}
