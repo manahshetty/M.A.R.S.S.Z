@@ -11,6 +11,22 @@
         <title>Index</title>
         <link rel="stylesheet" type="text/css" href="../CSS/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+
+        <script>
+            function passvalues()
+            {
+                var grade = document.getElementById('grade').value;
+                var subject = document.getElementById('subject').value;
+                var chapter = document.getElementById('chapter').value;
+                localStorage.setItem("grade", grade);
+                localStorage.setItem("subject", subject);
+                localStorage.setItem("chapter", chapter);
+                document.getElementById("form_id").action="quiz.html";
+                return false;
+            }
+                  
+        </script>
+
     </head>
     <body background="../IMAGES/back.jpg">
 
@@ -39,24 +55,17 @@
       </nav>
       <!-- NAVBAR -->
 
+      <div id="outer">
         <div id="logo">
             <img src="../IMAGES/logo.png" id="pic">
         </div>
         <div id="heading">
             Keep your wits about you!
         </div>
-        
-        <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                  <a href="quiz.html">Chapter 1</a>
-                  <a href="quiz.html">Chapter 2</a>
-                  <a href="quiz.html">Chapter 3</a>
-                  <a href="quiz.html">Chapter 4</a>
-                </div>
-        </div>
-    
+
     <div id="parent">
+
+      <form id="form_id">
 
         <select name="grade" id="grade">
           <option value="" disabled selected hidden>Choose your grade</option>
@@ -80,16 +89,48 @@
             <option value="ch2">Chapter 2</option>
             <option value="ch3">Chapter 3</option>
             <option value="ch4">Chapter 4</option>
+            <option value="ch5">Chapter 5</option>
+            <option value="ch6">Chapter 6</option>
         </select>
            <br><br><br><br>
-        <button class="buttons" onclick="href:location='quiz.html'">GO TO QUIZ</button>
+        <input type="submit" value="GO TO QUIZ" class="buttons" onclick="check()"/>
+        </form>
     </div>
+  </div>
+
+</div>
+
+  <div id="container-alert" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <br>
+    <h1>Alert!</h1>
+    <h7>The options for various grades, subjects and chapters, underline the future scope of the website.</h7><br>
+    <h7>Currently, data has been fed in for ALL the chapters, of HISTORY, for GRADE 6. </h7><br>
+    <h7>All the other options will redirect to the quiz for Grade 6: History, Chapter 1 quiz.</h7><br>
+    <h7>Data for other quizzes can be added as per the teachers' demand.</h7>
+    <br><br>
+    <button id = "btn_ok" onclick="change()">OK</button>
+  </div>
 
 
 
     <script>
 
-           
+function change(){
+
+  document.getElementById("container-alert").style.visibility="hidden";
+  document.getElementById("outer").style.opacity = 1;
+
+}
+
+function check(){
+  if(document.getElementById("grade").value == '' || document.getElementById("subject").value == '' || document.getElementById("chapter").value == ''){
+    alert('You need to select an option from all the fields');
+  }
+  else{
+    passvalues();
+  }
+}
+
     </script>
     </body>
 </html>
