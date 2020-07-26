@@ -8,6 +8,7 @@
 
   <body background="../IMAGES/download1.jpg" >
 
+    <div id = "outer">
     <div id="logo">
       <img src="../IMAGES/logo.png" id="pic">
       <div class="container-top">
@@ -28,7 +29,7 @@
         />
         <h3>Richard Parker</h3>
         <h6>New York</h6>
-        <button onclick="location.href='student_profile.html'">Go Back to Profile</button>
+        <button id="prof_btn" onclick="location.href='student_profile.html'">Go Back to Profile</button>
       </div>
    
     <div class="container-cards">
@@ -69,6 +70,7 @@
     </div>
 
   </div>
+  <br><br>
 
   <div class="container-bottom">
     <div style="padding-left: 2%;">
@@ -78,6 +80,18 @@
     <h1 id="h1Question"> </h1>
     <button class="next-button" id="next" value="1" onclick="nextQuestion()"> Next Question </button>
   </div>
+
+</div>
+
+    <div id="container-score">
+      <h3>Quiz completed!</h3>
+      <h3>Your Score for this quiz:</h3>
+      <h3 id = "your_score">100</h3>
+      <button id = "btn_score" onclick="href:location='student_profile.html'">OK</button>
+    </div>
+  
+
+  
 
   <script type="text/javascript">
 
@@ -141,7 +155,7 @@
         score+=4;
         scoreElement.innerHTML = score;
         logText.innerHTML+="Correct Card - 4 points gained";
-        logText.innerHTML+="<br />";
+        logText.innerHTML+="<br /><br />";
         tries++;
 
         if(tries == 5)                                                          //Next question
@@ -149,10 +163,14 @@
           display();
           //alert("You've exhausted your tries :(\nClick OK to move to the next question.");
           setTimeout( () => {
+          logText.innerHTML = "";
           i++;
           if(i == 5)
           {
-            window.location.href = "student_profile.html";
+            document.getElementById("your_score").innerHTML = score;
+            document.getElementById("container-score").style.visibility = 'visible';
+            document.getElementById("outer").style.opacity = 0.5;
+            //window.location.href = "student_profile.html";
           }
           var cards = extra[i].concat(ans[i]);
           shuffle(cards);
@@ -175,17 +193,22 @@
           score-=2;
           scoreElement.innerHTML = score;
           logText.innerHTML+="Wrong Card - 2 points deducted";
-          logText.innerHTML+="<br />";
+          logText.innerHTML+="<br /><br />";
           tries++;
           if(tries == 5)
           {
+           
             display();
             //alert("You've exhausted your tries :(\nClick OK to move to the next question.");
-            setTimeout( () => {            
+            setTimeout( () => {     
+            logText.innerHTML = "";       
             i++;
             if(i == 5)
             {
-              window.location.href = "student_profile.html";
+              document.getElementById("your_score").innerHTML = score;
+              document.getElementById("container-score").style.visibility = 'visible';
+              document.getElementById("outer").style.opacity = 0.5;
+              //window.location.href = "student_profile.html";
             }
             var cards = extra[i].concat(ans[i]);
             shuffle(cards);
@@ -210,7 +233,10 @@
         if(i>=4)                                                              //End of game
         {
           ques.innerHTML = "Your Final Score";
-          window.location.href = "student_profile.html";
+          document.getElementById("your_score").innerHTML = score;
+          document.getElementById("container-score").style.visibility = 'visible';
+          document.getElementById("outer").style.opacity = 0.5;
+          //window.location.href = "student_profile.html";
         }
 
         else
