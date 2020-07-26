@@ -17,10 +17,12 @@
     font-size:72pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
+    color: black;
 }
 .carousel-caption h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
+    color: black;
 }
 /* Make the image fully responsive */
 .carousel-inner img {
