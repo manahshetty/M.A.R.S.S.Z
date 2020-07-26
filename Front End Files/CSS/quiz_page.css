@@ -84,13 +84,13 @@
 
 .btn{
     height: 100px;
-    width: 150px;
+    width: 180px;
     margin-right: 5px;
     margin-bottom: 8px;
   background: url('../IMAGES/download.jpg') no-repeat top left;
   padding: 2px 8px;
   font-family: 'Grenze Gotisch', cursive;
-  font-size: 25px;
+  font-size: 22.5px;
 }
 
 #logo_pic{
@@ -98,4 +98,50 @@
     top: 7px;
     right: 15px;
     height: 300px;
+}
+
+#prof_btn{
+  width: 70%;
+  height: 10%;
+}
+
+#container-score {
+  position: fixed;
+  left: 29%;
+  height: 265px;
+  top: 26%;
+  width: 40%;
+  text-align:center;
+  padding: 20px;
+  background-image: url("../IMAGES/green.jpg");
+  opacity: 1;
+  border: black;
+  color:black;
+  border-style: inset;
+  font-weight: bold;
+  visibility: hidden;
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 22.5px;
+ }
+
+ #btn_score{
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Gayathri', sans-serif;
+ }
+
+ #btn_score:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+#outer{
+  opacity: 1;
 }
