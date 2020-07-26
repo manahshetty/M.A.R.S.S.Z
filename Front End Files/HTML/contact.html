@@ -56,16 +56,19 @@
             <br/>
             <textarea placeholder="Message..."></textarea>
             <br/>
-            <input type="button" value="Send!">
+            <div class="popup" onclick="popupfn()">
+              <input type="button" value="Send!">
+              <span class="popuptext" id="myPopup">Your response has been sent! 
+                <a id = 'redirect' href='home.html'>Back to Home </a></span>
+            </div>
             </form>
         </div>
     </div>
-    <div class="footer">
-            <br/> Ramon House, 169, <br/>
-                  Backbay Reclamation, H T Parekh Marg, Churchgate, <br/>
-                  Mumbai, Maharashtra 400020<br/>
-            <br/> Call : 8190 8190<br/><br/>
-            <br/> Copyright © 2019 EduForTreasure India Limited. All rights reserved. EduForTreasure Financial Services Limited is authorised by the Financial Conduct Authority under the Electronic Money Regulations 2011 for the issuing of electronic money and payment instruments. Spillion Merchant Services Limited is licensed by the Financial Services Authority of the Isle of Man (Ref. 1357) to carry out money transmission services. EduForTreasure is a registered trademarks of EduForTreasure Holdings India Limited.
-    </div>
+    <script>
+      function popupfn(){
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
     </body>
 </html>
