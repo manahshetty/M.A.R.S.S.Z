@@ -1,0 +1,71 @@
+
+.carousel {
+    padding: 50px;
+    width: 100%;
+    height: 720px;
+    top : 125px;
+}
+.carousel-control {
+    height: 100%;
+    top: 10% ;
+}
+.carousel-indicators {
+    bottom: 300px ;
+    text-align: center;
+}
+.carousel-caption h1 {
+    font-size:72pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+.carousel-caption h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 450px;
+}
+
+.footer {
+  background-color: black;
+  padding: 100px;
+  color: white;
+  text-align: center;
+}
+
+#bg {
+    background-color:rgb(255, 255, 255); margin-bottom:0px; padding: 0px 0px;
+}
+nav a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.navbar {background-color: rgb(2, 2, 2) ; overflow:hidden; height:40px; margin-top:8px;}
+.navbar a { float:left ; color: #f2f2f2 ; text-align: center; padding: 5px 10px; text-decoration:none ; font-size: 20px ; white-space:pre;}
+.navbar a:hover {background-color: #ddd ; color:black ;}
+.navbar a:active {background-color:  rgb(72, 151, 158); color:white;}
+.onthis {background-color: rgb(72, 151, 158); color: white;}
+/*
+.navbar a:hover {color:rgb(194, 191, 191) ;}
+.navbar a:active {background-color:  rgb(72, 151, 158); color:white;}
+*/
+
+        /*.navbar #signin { background-color: #4CAF50; float:right;}*/
+        /*.navbar {padding-left: 10px; padding-right: 10px;}*/
+
+#logo{
+    position: absolute;
+    top: 48.5px;
+    left: 0px;
+    width: 100%;
+    height: 23.5%;
+    background-color: black;
+    justify-content: right;
+}
+
+#pic{
+    top: 50px;
+    align-self: center;
+    }
