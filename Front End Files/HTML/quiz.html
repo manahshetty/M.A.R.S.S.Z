@@ -98,22 +98,137 @@
     //Arrays of questions, answers and options.
     //CHAPTER 1:
     /*
-    var questions = Jain Madam and Jain Saheb
-    ['Kanta', 'identity', 'election', 'cast votes', 'Universal Adult Franchise']
-    ['attend', 'publicly', 'face', 'cities', 'room', 'come', 'child', 'home', 'centuries', 'dine', 'dust', 'area', 'ansari', 'suggestion', 'drain', 'fish', 'cost', 'vein', 'gupta working', 'worker']
-    Other Kinds of Equality
-    ['dalits', 'money', 'living conditions', 'employer', 'education']
-    ['markets', 'home', 'ambedkar', 'women', 'today', 'facilities', 'cipher', 'constitution', 'gion', 'room', 'things', 'male', 'sweep', 'excuse', 'sure', 'hand', 'change', 'rent', 'friend', 'mothers']
-    Equality in Indian Democracy
-    ['Indian Constitution', 'self respect', 'everybody', 'different backgrounds', 'treatment']
-    ['stand', 'seat', 'school', 'cipher', 'daughter', 'male', 'american', 'forms', 'mothers', 'stomachs', 'worker', 'system', 'alignity', 'parks', 'area', 'private', 'difficulties', 'morning', 'article', 'swath star']
-    ['Rosa Parks', 'recognition', 'opportunity', 'prejudices', 'african americans']
-    ['spectacle', 'truth', 'mouth', 'term', 'fein', 'cipher', 'majority', 'sujata', 'master', 'dust', 'hands', 'north', 'disability', 'highly indians', 'urban', 'advertisements', 'stair', 'autobiography', 'system', 'neighbour']
-    On equality
-    ['disgraceful', 'Ambedkar', 'agitation', 'sustainable development goal', 'society struggle']
-    ['robe', 'worker', 'writer', 'problem', 'chote', 'door', 'today', 'addition', 'differences', 'mouth', 'attendance', 'maintain', 'water', 'wealth', 'property dealer', 'autobiography', 'ashok jain', 'home', 'midday meal', 'lunch']
+    var questions = {q0:"Question 1: Jain Madam and Jain Saheb", q1:"Question 2: Other Kinds of Equality", q2:"Question 3: Equality in Indian Democracy", 
+                    q3:"Question 4: Civil Rights movement", q4:"Question 5: On equality"}; 
+    var answers = {q0:['Kanta', 'identity', 'election', 'cast votes', 'Universal Adult Franchise'],
+                   q1:['dalits', 'money', 'living conditions', 'employer', 'education'],
+                   q2:['Indian Constitution', 'self respect', 'everybody', 'different backgrounds', 'treatment'],
+                   q3:['Rosa Parks', 'recognition', 'opportunity', 'prejudices', 'african americans'],
+                   q4:['disgraceful', 'Ambedkar', 'agitation', 'sustainable development goal', 'society struggle']
+                   };
+    var extra = [
+                ['attend', 'publicly', 'face', 'cities', 'room', 'come', 'child', 'home', 'centuries', 'dine', 'dust', 'area', 'ansari', 'suggestion', 'drain', 'fish', 'cost', 'vein', 'gupta working', 'worker'],
+                ['markets', 'home', 'ambedkar', 'women', 'today', 'facilities', 'cipher', 'constitution', 'gion', 'room', 'things', 'male', 'sweep', 'excuse', 'sure', 'hand', 'change', 'rent', 'friend', 'mothers'],
+                ['stand', 'seat', 'school', 'cipher', 'daughter', 'male', 'american', 'forms', 'mothers', 'stomachs', 'worker', 'system', 'alignity', 'parks', 'area', 'private', 'difficulties', 'morning', 'article', 'swath star'],
+                ['spectacle', 'truth', 'mouth', 'term', 'fein', 'cipher', 'majority', 'sujata', 'master', 'dust', 'hands', 'north', 'disability', 'highly indians', 'urban', 'advertisements', 'stair', 'autobiography', 'system', 'neighbour'],
+                ['robe', 'worker', 'writer', 'problem', 'chote', 'door', 'today', 'addition', 'differences', 'mouth', 'attendance', 'maintain', 'water', 'wealth', 'property dealer', 'autobiography', 'ashok jain', 'home', 'midday meal', 'lunch']
+                ];
+     var ans = [
+               ['Kanta', 'identity', 'election', 'cast votes', 'Universal Adult Franchise'],
+               ['dalits', 'money', 'living conditions', 'employer', 'education'],
+               ['Indian Constitution', 'self respect', 'everybody', 'different backgrounds', 'treatment'],
+               ['Rosa Parks', 'recognition', 'opportunity', 'prejudices', 'african americans'],
+               ['disgraceful', 'Ambedkar', 'agitation', 'sustainable development goal', 'society struggle']
+                ];
     */
     //CHAPTER 3:
+    /*
+    var questions = { q0:"Question 1: Houses, Drains and Streets", q1:"Question 1: new crafts in the city", q2:"Question 3: food for people in the cities:", 
+                      q3: "Question 4: words to describe people:", q4:"Question 5: the story of the megaliths:"} ;
+    var answers = { q0:['chert', 'courtyard', 'inspection holes', 'gentle slope', 'separate bathing'],
+                    q1:['carve', 'spindle whorls', 'faience', 'beena', 'polishing'],
+                    q2:['cattle', 'irrigation', 'reared', 'produce', 'sesame'],
+                    q3:['dasyus', 'brahmins', 'yadu', 'vaishya', 'jana'],
+                    q4:['boulders', 'single standing', 'skeletons', 'brahmagiri', 'cist']
+                   };
+    var extra = [
+                ['similarities', 'megalithic', 'everybody', 'priests', 'historians', 'tamil', 'search', 'crafts persons', 'workshops', 'structure', 'karnataka', 'kannada', 'perform', 'egypt', 'mohenjodaro', 'mehrgarh', 'conch shell', 'groups', 'assamese', 'developments'],
+                ['tributary', 'railway lines', 'physician', 'translation', 'lothal', 'signposts', 'malayalam', 'construction', 'human', 'fathers', 'fuel', 'bharata', 'karnataka', 'substances', 'ghee', 'sheep', 'spots', 'evidence', 'skilful warriors', 'bones'],
+                ['letters', 'children', 'translation', 'sarasvati', 'huge', 'kalibangan', 'dholavira', 'cultural practices', 'variety', 'silent sentinels', 'garbage', 'important', 'elaborate store', 'settlements', 'rice', 'skeletal studies', 'sind', 'answer', 'signs', 'path'],
+                ['collected', 'indications', 'subcontinent', 'cultural practices', 'malayalam', 'seals', 'major change', 'birch bark', 'valuable', 'children', 'earth', 'bronze', 'cotton', 'battles', 'travel', 'real', 'rulers', 'unique object', 'safely', 'garbage'],
+                ['property', 'notte great bath', 'intervals', 'karnataka', 'scholars', 'girl', 'printed texts', 'children', 'family', 'drained', 'mohenjodaro', 'crafts persons', 'specialists', 'millets', 'rulers', 'safely', 'illustration', 'construction', 'clay', 'rajas']
+                ];
+    var ans = [
+               ['chert', 'courtyard', 'inspection holes', 'gentle slope', 'separate bathing'],
+               ['carve', 'spindle whorls', 'faience', 'beena', 'polishing'],
+               ['cattle', 'irrigation', 'reared', 'produce', 'sesame'],
+               ['dasyus', 'brahmins', 'yadu', 'vaishya', 'jana'],
+               ['boulders', 'single standing', 'skeletons', 'brahmagiri', 'cist']
+              ];
+    */
+    //CHAPTER 4:
+    /*
+    var questions = {q0:"Question 1: Words to Describe People", q1:"Question 2: Cattle Horses and Chariots", q2:"Question 3: A Special Burial at Inamgaon", 
+                     q3:"Question 4: What Skeletal Studies tell us", q4:"Question 5: Occupations at Inamgaon" };
+    var answers = { q0: ['brahmins', 'slave', 'bharata', 'dasyus', 'vaishya'],
+                    q1: ['fight', 'leaders', 'yajnas', 'sacrifices', 'barley'],
+                    q2: ['courtyard', 'granary', 'vessels', 'Bhima', 'ghod'],
+                    q3: ['inamgaon', 'bones', 'jewellery', 'charaka samhita',  'cartilage'],
+                    q4: ['sesame', 'berries', 'brahmacharya', 'buffalo', 'bearing cut marks']
+                  };
+    var extra = [
+                ['goat', 'problems', 'hardy crops', 'itis', 'amla', 'pasture', 'houses', 'variety', 'cases', 'small size', 'teeth', 'modern anatomy', 'deer', 'millets', 'crab', 'evidence', 'chief', 'battles', 'assemblies', 'sheep'],
+                ['owners', 'teeth', 'detail', 'reference', 'rituals', 'millets', 'west', 'feminine', 'vish', 'straight', 'blackbuck', 'rajas', 'goat', 'settlement', 'crab', 'adults', 'joints', 'sambhar', 'amla', 'rice'],
+                ['crab', 'reference', 'grain', 'occupations', 'joints', 'children', 'fruits', 'palaces', 'crocodile', 'human', 'modern anatomy', 'capture', 'problems', 'fathers', 'detail', 'sambhar', 'amla', 'hardy crops', 'skeletal studies', 'physician'],
+                ['rice', 'crab', 'dasas', 'jana', 'property', 'reference', 'opponents', 'vish', 'land', 'work', 'cultural practices', 'grain', 'wheat', 'cases', 'occupy', 'straight', 'rajas', 'goat', 'mongoose', 'hardy crops'],
+                ['physician', 'adults', 'capture', 'problems', 'bearing', 'hardy crops', 'children', 'capital cities', 'structure', 'palaces', 'wealth', 'chief', 'girl', 'rituals', 'figure', 'occupy', 'peace', 'rajas', 'yadu', 'straight']
+                ];
+    var ans = [
+              ['brahmins', 'slave', 'bharata', 'dasyus', 'vaishya'],
+              ['fight', 'leaders', 'yajnas', 'sacrifices', 'barley'],
+              ['courtyard', 'granary', 'vessels', 'Bhima', 'ghod'],
+              ['inamgaon', 'bones', 'jewellery', 'charaka samhita',  'cartilage'],
+              ['sesame', 'berries', 'brahmacharya', 'buffalo', 'bearing cut marks']
+              ];
+    
+    */
+    //CHAPTER 5:
+    /*
+    var questions = {q0: "Question 1: How some Men became Rulers", q1:"Question 2: Varnas", q2:"Question 3: taxes", 
+                    q3:"Question 4: kingdoms kings and changes in agriculture", q4:"Question 5: A closer look a Magadha"};
+    var answers = {
+                    q0:['ashvamedha', 'kingdoms', 'sacrifices', 'horse', 'battle field'],
+                    q1:['vedic', 'untouchability', 'yajurveda', 'traders', 'social economic'],
+                    q2:['officials', 'bhaga', 'goods', 'produce', 'collect'],
+                    q3:['iron ploughshares', 'scattering seed', 'transplant', 'landless agricultural', 'dasas'],
+                    q4:['alexander', 'rajagriha', 'pataliputra', 'ajatasattu', 'mahapadma nanda']
+                  };
+    var extra = [
+                ['attacks', 'warriors', 'include', 'punch marked coins', 'weapons', 'local shrines', 'atharvaveda', 'threat', 'true democracy', 'women', 'delhi', 'plants', 'foot', 'need', 'wheat', 'fron noth', 'crafts persons', 'practice', 'foreigners', 'kaushambi'],
+                ['meet', 'merchants', 'great deal', 'bihar', 'variety', 'plants', 'rivers', 'rice', 'word', 'vall', 'conquer', 'charioteer', 'debate', 'illustration', 'villages', 'number', 'workshops', 'magadha', 'fortified', 'appointments'],
+                ['from north', 'conquer', 'threat', 'mahavira', 'government', 'smith', 'vaishali', 'influence', 'wooden', 'planning', 'vall', 'books', 'long', 'frequent public', 'throne', 'jana', 'lakhs', 'stone', 'wise saints', 'rights'],
+                ['surface', 'weapons', 'meerut', 'region', 'building houses', 'wives', 'bimbisara', 'time', 'vivid descriptions', 'digha nikaya', 'painted', 'kshatriyas', 'farmers', 'animals', 'labourers', 'famous', 'closer look', 'companion', 'janapadas', 'discussion'],
+                ['brick', 'probably', 'vall', 'rivers', 'fortified', 'bult', 'weapons', 'attacks', 'terms', 'true democracy', 'conquer', 'force', 'established', 'mahajanapadas', 'long', 'strong tools', 'rice', 'tiger skin', 'labourers', 'beliefs']
+                ];
+    var ans = [
+              ['ashvamedha', 'kingdoms', 'sacrifices', 'horse', 'battle field'],
+              ['vedic', 'untouchability', 'yajurveda', 'traders', 'social economic'],
+              ['officials', 'bhaga', 'goods', 'produce', 'collect'],
+              ['iron ploughshares', 'scattering seed', 'transplant', 'landless agricultural', 'dasas'],
+              ['alexander', 'rajagriha', 'pataliputra', 'ajatasattu', 'mahapadma nanda']
+              ];
+
+
+    */
+    //CHAPTER 6:
+    /*
+    var questions = {q0:"Question 1 : The Story of the Buddha", q1:"Question 2: Upanishads", q2:"Question 3: The Sangha",
+                     q3:"Question 4: A Cave hollowed out in the hill", q4:"Question 5: The System of Ashramas"};
+
+    var answers = {q0:['knowledge', 'true meaning', 'enlightenment', 'suffering', 'realisation'],
+                   q1:['vardhamana mahavira', 'individual soul', 'truth', 'doctrine', 'later vedic texts'],
+                   q2:['meetings', 'buddhist', 'beautiful poems', 'separate branches', 'association'],
+                   q3:['medicines', 'subcontinent', 'western', 'local',  'order'],
+                   q4:['vanaprastha', 'zoroastrianism', 'brahmacharya', 'meditation', 'tranquillity']
+                   };
+
+    var extra = [
+      ['karle', 'different', 'merchants', 'valabhi', 'tirthankara', 'write', 'universal', 'teachings', 'vaishya', 'husbands', 'wood', 'leave', 'entire world', 'farmers', 'vajji sangha', 'verse', 'ancestors', 'iranian prophet', 'baste', 'study'],
+      ['villages', 'parents', 'baste', 'vaishya', 'waters', 'small gana', 'etna', 'debtors', 'peepal tree', 'bihar', 'describe', 'deeds', 'people', 'sakya', 'courtesans', 'creditors', 'major religion', 'masters', 'strength', 'founder'],
+      ['entire world', 'search', 'deeds', 'regions', 'country', 'forms', 'kings', 'sages', 'farmers', 'ancestors', 'mighty ocean', 'living', 'siddhartha', 'sacrifices', 'prince', 'story', 'rest', 'gifts', 'rules', 'learned'],
+      ['women', 'death', 'country', 'describe', 'prince', 'different', 'deep', 'conversations', 'north india', 'wise', 'rest', 'followers', 'magadhi', 'students', 'moderation', 'bodh gaya', 'poor', 'group', 'brahman', 'masters'],
+      ['karnataka', 'labourers', 'brahman', 'small gana', 'followers', 'gargi', 'rest', 'society', 'group', 'discussions', 'reality', 'wise', 'monks', 'insects', 'clothing', 'cities', 'foot', 'peepal tree', 'tirthankara', 'ahimsa'],
+    ];
+
+    var ans = [
+            ['knowledge', 'true meaning', 'enlightenment', 'suffering', 'realisation'],
+            ['vardhamana mahavira', 'individual soul', 'truth', 'doctrine', 'later vedic texts'],
+            ['meetings', 'buddhist', 'beautiful poems', 'separate branches', 'association'],
+            ['medicines', 'subcontinent', 'western', 'local',  'order'],
+            ['vanaprastha', 'zoroastrianism', 'brahmacharya', 'meditation', 'tranquillity']
+    ];
+    */
+    //CHAPTER 2:
     var questions = {q0:"Question 1 : how do we know about these people", q1:"Question 2: finding out about fire", q2:"Question 3: a changing environment",
                      q3:"Question 4: a settled new way of life", q4:"Question 5: elsewhere cave paintings in france"};
     var answers = {q0:['paintings', 'walls',  'bhimbetka', 'southern up' , 'narmada valley'],
