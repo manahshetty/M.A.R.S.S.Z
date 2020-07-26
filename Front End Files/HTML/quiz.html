@@ -319,7 +319,7 @@
     {
       document.getElementById('button'+ x).innerHTML = '' + cards[x];
     }
-
+    var flag = 0;                                                               //To ensure smooth running of 'Next Question' and automatic Next.
     var i = 0;                                                                  //Keep track of question number
     var tries = 0;                                                              //Keep track of attempts
 
@@ -354,6 +354,8 @@
           display();
           //alert("You've exhausted your tries :(\nClick OK to move to the next question.");
           setTimeout( () => {
+          if(flag == 0)
+          {
           logText.innerHTML = "";
           i++;
           if(i == 5)
@@ -374,6 +376,12 @@
           ques.innerHTML = questions["q" + i].toUpperCase();
           tries = 0;
           return;
+          }
+          else
+          {
+            flag = 0;
+            return;
+          }
           }, 3000);
         }
         }
@@ -392,6 +400,8 @@
             display();
             //alert("You've exhausted your tries :(\nClick OK to move to the next question.");
             setTimeout( () => {
+            if(flag == 0)
+            {
             logText.innerHTML = "";
             i++;
             if(i == 5)
@@ -412,6 +422,12 @@
             ques.innerHTML = questions["q" + i].toUpperCase();
             tries = 0;
             return;
+            }
+            else
+            {
+              flag = 0;
+              return;
+            }
             }, 3000);
           }
       }
@@ -421,6 +437,7 @@
 
       function nextQuestion()                                                 //Reset deck to next question
       {
+        flag = 1;
         if(i>=4)                                                              //End of game
         {
           ques.innerHTML = "Your Final Score";
