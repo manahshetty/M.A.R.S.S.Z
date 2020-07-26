@@ -1,0 +1,95 @@
+<html>
+    <head>
+      <!-- NAVBAR -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!-- NAVBAR -->
+
+        <title>Index</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+    </head>
+    <body background="../IMAGES/back.jpg">
+
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-inverse" style="background-color: black;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">INSPIRE</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="student_profile.html">My Profile</a></li>
+              <li class="active"><a href="index_stud.html">Let's Play!</a></li>
+              <li><a href="rules_stud.html">How to Play?</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="home.html"><span class="glyphicon glyphicon-user"></span> Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+        <div id="logo">
+            <img src="../IMAGES/logo.png" id="pic">
+        </div>
+        <div id="heading">
+            Keep your wits about you!
+        </div>
+        
+        <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="quiz.html">Chapter 1</a>
+                  <a href="quiz.html">Chapter 2</a>
+                  <a href="quiz.html">Chapter 3</a>
+                  <a href="quiz.html">Chapter 4</a>
+                </div>
+        </div>
+    
+    <div id="parent">
+
+        <select name="grade" id="grade">
+          <option value="" disabled selected hidden>Choose your grade</option>
+          <option value="six">Grade 6</option>
+          <option value="seven">Grade 7</option>
+          <option value="eight">Grade 8</option>
+          <option value="nine">Grade 9</option>
+        </select>
+
+        <select name="subject" id="subject">
+            <option value="" disabled selected hidden>Choose the subject</option>
+            <option value="history">History</option>
+            <option value="geography">Geography</option>
+            <option value="science">Science</option>
+            <option value="EVS">EVS</option>
+        </select>
+
+        <select name="chapter" id="chapter">
+            <option value="" disabled selected hidden>Choose the chapter</option>
+            <option value="ch1">Chapter 1</option>
+            <option value="ch2">Chapter 2</option>
+            <option value="ch3">Chapter 3</option>
+            <option value="ch4">Chapter 4</option>
+        </select>
+           <br><br><br><br>
+        <button class="buttons" onclick="href:location='quiz.html'">GO TO QUIZ</button>
+    </div>
+
+
+
+    <script>
+
+           
+    </script>
+    </body>
+</html>

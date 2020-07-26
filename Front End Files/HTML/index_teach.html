@@ -1,0 +1,167 @@
+<html>
+    <head>
+      <!-- NAVBAR -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!-- NAVBAR -->
+
+        <title>Index</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
+    </head>
+    <body background="../IMAGES/back.jpg">
+
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-inverse" style="background-color: black;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">INSPIRE</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="teacher_profile.html">My Profile</a></li>
+              <li class="active"><a href="index_teach.html">Upload Lecture</a></li>
+              <li><a href="rules_teach.html">Instructions</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="home.html"><span class="glyphicon glyphicon-user"></span> Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+        <div id="logo">
+            <img src="../IMAGES/logo.png" id="pic">
+        </div>
+        <div id="heading">
+            Choose Grade, Subject and Chapter:
+        </div>
+        
+        <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="upload.html">Chapter 1</a>
+                  <a href="upload.html">Chapter 2</a>
+                  <a href="upload.html">Chapter 3</a>
+                  <a href="upload.html">Chapter 4</a>
+                </div>
+        </div>
+
+        <div id="english" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="upload_eng.html">Chapter 1</a>
+                  <a href="upload_eng.html">Chapter 2</a>
+                  <a href="upload_eng.html">Chapter 3</a>
+                  <a href="upload_eng.html">Chapter 4</a>
+                </div>
+        </div>
+    
+    <div id="parent">
+            <button class="buttons" onclick="buttonClick1()">Grade 6</button><br><br>
+            <table id ="one" class="btn_parent">
+                <tr>
+                    <td><button class="btn" onclick="openNav_E()">English</button></td>
+                    <td><button class="btn" onclick="openNav()">History</button></td>
+                    <td><button class="btn" onclick='openNav()'>EVS</button></td>
+                    <td><button class="btn" onclick='openNav()'>Science</button></td>
+                </tr>
+            </table>
+            <br>
+            <button class="buttons" onclick="buttonClick2()">Grade 7</button><br><br>
+            <table id="two" class="btn_parent">
+                <tr>
+                    <td><button class="btn" onclick="openNav_E()">English</button></td>
+                    <td><button class="btn" onclick="openNav()">History</button></td>
+                    <td><button class="btn" onclick="openNav()">EVS</button></td>
+                    <td><button class="btn" onclick="openNav()">Science</button></td>
+                </tr>
+            </table>
+            <br>
+            <button class="buttons" onclick="buttonClick3()">Grade X</button><br><br>
+            <table id="three" class="btn_parent">
+                <tr>
+                    <td><button class="btn" onclick="openNav_E()">English</button></td>
+                    <td><button class="btn" onclick="openNav()">History</button></td>
+                    <td><button class="btn" onclick="openNav()">EVS</button></td>
+                    <td><button class="btn" onclick="openNav()">Science</button></td>
+                </tr>
+            </table>
+            <br>
+            <button class="buttons" onclick="buttonClick4()">Grade X</button><br><br>
+            <table id="four" class="btn_parent">
+                <tr>
+                    <td><button class="btn" onclick="openNav_E()">English</button></td>
+                    <td><button class="btn" onclick="openNav()">History</button></td>
+                    <td><button class="btn" onclick="openNav()">EVS</button></td>
+                    <td><button class="btn" onclick="openNav()">Science</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+
+            function buttonClick1(){
+                var vis = document.getElementById("one");
+                vis.style.visibility = "visible";
+            }
+
+            function buttonClick2(){
+                var vis = document.getElementById("two");
+                vis.style.visibility = "visible";
+            }
+
+            function buttonClick3(){
+                var vis = document.getElementById("three");
+                vis.style.visibility = "visible";
+            }
+
+            function buttonClick4(){
+                var vis = document.getElementById("four");
+                vis.style.visibility = "visible";
+            }
+
+            function buttonClick1_1(){
+                var vis = document.getElementById("one_1");
+                vis.style.visibility = "visible";
+            }
+
+            function buttonClick1_2(){
+                var vis = document.getElementById("one_2");
+                vis.style.visibility = "visible";
+            }
+
+            function buttonClick1_3(){
+                var vis = document.getElementById("one_1");
+                vis.style.visibility = "visible";
+            }
+
+            function buttonClick1_4(){
+                var vis = document.getElementById("one_1");
+                vis.style.visibility = "visible";
+            }
+
+            function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            }
+
+            function openNav_E() {
+            document.getElementById("english").style.width = "100%";
+            }
+
+            function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            }
+
+        </script>
+    </body>
+</html>
