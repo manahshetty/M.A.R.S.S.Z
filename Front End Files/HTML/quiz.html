@@ -455,6 +455,7 @@
         }
 
         var cards = extra[i].concat(ans[i]);                                  //Reset cards
+        shuffle(cards);
         for(var c=0;c<25;c++)
         {
           document.getElementById('button'+ c).innerHTML = '' + cards[c];
