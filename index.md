@@ -34,15 +34,15 @@ _**Application-Type**_ :   Website
 We thus hope to help the student revise concepts comprehensively and aid learning.
 
 
-# What's next for RUMINATE?
+# What's next for *Ruminate*?
 
-- A tracking methodology to keep a track of the weekly growth of students, and a leaderboard.
+* A tracking methodology to keep a track of the weekly growth of students, and a leaderboard.
 
 * Add to the fun with a multiplayer option, with weekly tournaments and teams pitted against each other. A team member provides his team with clues instead of the system doing so. This would further test their ability to map concepts while bringing in the extra fun of team games.
 
-= Extend beyond ncert textbooks to any and all textbooks demanded by teachers.
+* Extend beyond ncert textbooks to any and all textbooks demanded by teachers.
 
-> Host lecture videos as well.
+* Host lecture videos as well.
 
 
 ---
