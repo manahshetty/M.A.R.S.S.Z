@@ -159,7 +159,7 @@
     function buttonClick(clicked_ID)
     {
       var btn = document.getElementById(clicked_ID);
-      if(max_tries_copy>0){
+      if(max_tries_copy>0 && btn.value == '1'){
         tries_left.innerHTML = "Tries Left : " + (--max_tries_copy);        
       }
       if ((btn.value == "1") && (unlock == 1))                                                    //Ensure re-click of button isn't counted as a try.
