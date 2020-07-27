@@ -99,7 +99,7 @@
     //CHAPTER 1:
 
     var questions1 = {q0: "Question 1: How some Men became Rulers", q1:"Question 2: Varnas", q2:"Question 3: taxes",
-                    q3:"Question 4: kingdoms kings and changes in agriculture", q4:"Question 5: A closer look a Magadha"};
+                    q3:"Question 4: kingdoms kings and changes in agriculture", q4:"Question 5: A closer look at Magadha"};
     var answers1 = {
                     q0:['ashvamedha', 'kingdoms', 'sacrifices', 'horse', 'battle field'],
                     q1:['vedic', 'untouchability', 'yajurveda', 'traders', 'social economic'],
@@ -108,8 +108,8 @@
                     q4:['alexander', 'rajagriha', 'pataliputra', 'ajatasattu', 'mahapadma nanda']
                   };
     var extra1 = [
-                ['attacks', 'warriors', 'include', 'punch marked coins', 'weapons', 'local shrines', 'atharvaveda', 'threat', 'true democracy', 'women', 'delhi', 'plants', 'foot', 'need', 'wheat', 'fron noth', 'crafts persons', 'practice', 'foreigners', 'kaushambi'],
-                ['meet', 'merchants', 'great deal', 'bihar', 'variety', 'plants', 'rivers', 'rice', 'word', 'vall', 'conquer', 'charioteer', 'debate', 'illustration', 'villages', 'number', 'workshops', 'magadha', 'fortified', 'appointments'],
+                ['attacks', 'warriors', 'include', 'punch marked coins', 'weapons', 'local shrines', 'atharvaveda', 'threat', 'true democracy', 'women', 'delhi', 'plants', 'foot', 'need', 'wheat', 'fron north', 'crafts persons', 'practice', 'foreigners', 'kaushambi'],
+                ['meet', 'merchants', 'great deal', 'bihar', 'variety', 'plants', 'rivers', 'rice', 'word', 'wall', 'conquer', 'charioteer', 'debate', 'illustration', 'villages', 'number', 'workshops', 'magadha', 'fortified', 'appointments'],
                 ['from north', 'conquer', 'threat', 'mahavira', 'government', 'smith', 'vaishali', 'influence', 'wooden', 'planning', 'vall', 'books', 'long', 'frequent public', 'throne', 'jana', 'lakhs', 'stone', 'wise saints', 'rights'],
                 ['surface', 'weapons', 'meerut', 'region', 'building houses', 'wives', 'bimbisara', 'time', 'vivid descriptions', 'digha nikaya', 'painted', 'kshatriyas', 'farmers', 'animals', 'labourers', 'famous', 'closer look', 'companion', 'janapadas', 'discussion'],
                 ['brick', 'probably', 'vall', 'rivers', 'fortified', 'bult', 'weapons', 'attacks', 'terms', 'true democracy', 'conquer', 'force', 'established', 'mahajanapadas', 'long', 'strong tools', 'rice', 'tiger skin', 'labourers', 'beliefs']
@@ -262,7 +262,6 @@
     var ans = ans1;
     var answers = answers1;
     var extra = extra1;
-
     if(grade=="six")
     {
       if(subject=="history")
@@ -319,8 +318,9 @@
     {
       document.getElementById('button'+ x).innerHTML = '' + cards[x];
     }
-    var flag = 0;                                                               //To ensure smooth running of 'Next Question' and automatic Next.
+    var flag = 0;
     var i = 0;                                                                  //Keep track of question number
+    var unlock = 1; 
     var tries = 0;                                                              //Keep track of attempts
 
     var score=0;                                                                //Keep track of scores
@@ -334,7 +334,7 @@
     function buttonClick(clicked_ID)
     {
       var btn = document.getElementById(clicked_ID);
-      if (btn.value == "1")                                                     //Ensure re-click of button isn't counted as a try.
+      if (btn.value == "1" && unlock == 1)                                                     //Ensure re-click of button isn't counted as a try.
       {
         btn.value = "0"
         var guess = document.getElementById(clicked_ID).innerHTML;              //Extract user answer
@@ -348,12 +348,13 @@
         logText.innerHTML+="Correct Card - 4 points gained";
         logText.innerHTML+="<br /><br />";
         tries++;
-
+  
         if(tries == 5)                                                          //Next question
         {
           display();
-          //alert("You've exhausted your tries :(\nClick OK to move to the next question.");
+          unlock = 0;
           setTimeout( () => {
+          unlock = 1;
           if(flag == 0)
           {
           logText.innerHTML = "";
@@ -363,7 +364,6 @@
             document.getElementById("your_score").innerHTML = score;
             document.getElementById("container-score").style.visibility = 'visible';
             document.getElementById("outer").style.opacity = 0.5;
-            //window.location.href = "student_profile.html";
           }
           var cards = extra[i].concat(ans[i]);
           shuffle(cards);
@@ -398,8 +398,9 @@
           {
 
             display();
-            //alert("You've exhausted your tries :(\nClick OK to move to the next question.");
+            unlock = 0;
             setTimeout( () => {
+            unlock = 1;
             if(flag == 0)
             {
             logText.innerHTML = "";
@@ -409,7 +410,6 @@
               document.getElementById("your_score").innerHTML = score;
               document.getElementById("container-score").style.visibility = 'visible';
               document.getElementById("outer").style.opacity = 0.5;
-              //window.location.href = "student_profile.html";
             }
             var cards = extra[i].concat(ans[i]);
             shuffle(cards);
@@ -437,14 +437,16 @@
 
       function nextQuestion()                                                 //Reset deck to next question
       {
-        flag = 1;
+        if (tries == 5)
+        {
+          flag = 1;
+        }
         if(i>=4)                                                              //End of game
         {
           ques.innerHTML = "Your Final Score";
           document.getElementById("your_score").innerHTML = score;
           document.getElementById("container-score").style.visibility = 'visible';
           document.getElementById("outer").style.opacity = 0.5;
-          //window.location.href = "student_profile.html";
         }
 
         else
@@ -462,6 +464,7 @@
           document.getElementById('button'+ c).style.background = "url('../IMAGES/download.jpg') no-repeat top left";
           document.getElementById('button'+ c).value = "1";
         }
+        unlock = 1;
         tries = 0;
       }
 
@@ -476,7 +479,6 @@
             btn.style.background = "url('..//IMAGES/green.jpg') no-repeat top left";
           }
         }
-        return;
       }
 
       function shuffle(cards)                                                 //Randomiize cards
