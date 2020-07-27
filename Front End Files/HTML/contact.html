@@ -1,0 +1,74 @@
+<html>
+    <head>
+
+          <!-- NAVBAR -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          <!-- NAVBAR -->
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+            <link rel="stylesheet" href="../CSS/contact.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+
+      <!-- NAVBAR -->
+    	<nav class="navbar navbar-inverse" style="background-color: black;">
+    		<div class="container-fluid">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<a class="navbar-brand" href="#">INSPIRE</a>
+    			</div>
+    			<div class="collapse navbar-collapse" id="myNavbar">
+    				<ul class="nav navbar-nav">
+    					<li><a href="home.html">Home</a></li>
+    					<li><a href="about.html">About Us</a></li>
+    					<li class="active"><a href="contact.html">Contact Us</a></li>
+    				</ul>
+    				<ul class="nav navbar-nav navbar-right">
+    					<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    					<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</nav>
+    	<!-- NAVBAR -->
+
+    <div>
+        <div id="image">
+        <img style="height: 500px; width: 500px; " src="../IMAGES/contact.jpg">
+        </div>
+        <div id="contact">
+            <h1>Drop us a line</h1>
+            <br/>
+            <form action="mailto:manahshetty@gmail.com;12345shreya12345@gmail.com;arazsharma1103@gmail.com;rudranger@gmail.com;zeekhan141298@gmail.com;sauravnayak51@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" id="name" name="Name " placeholder="Name">
+            <br/>
+            <input type="text" id="email" name="Email " placeholder="E-Mail">
+            <br/>
+            <input type="text" class="messageArea" name="Message " placeholder="Message..."></textarea>
+            <br/>
+            <div class="popup" onclick="popupfn()">
+              <input type="submit" value="Send!">
+              <span class="popuptext" id="myPopup">Your response has been sent!
+                <a id = 'redirect' href='home.html'>Back to Home </a></span>
+            </div>
+            </form>
+        </div>
+      </div>
+    <script>
+      function popupfn(){
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
+    </body>
+</html>
