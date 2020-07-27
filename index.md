@@ -28,9 +28,9 @@ _**Application-Type**_ :   Website
 
 > With education now making huge strides into virtual classrooms, capturing the interests of young minds is the next big challenge. Our platform puts together a fun assessment technique designed to keep students interested and alert.
 
-The assessments have been entirely automated using Natural Language Processing, thus greatly reducing burden on teachers (with little to no work on their part) while presenting to students a concise summary of lessons. The automation compartmentalizes a chapter into sections and brings to you a fun game based on these sectionalized keywords. The project seeks to inspire true learning amongst students as the student maps the keywords to the concept. 
+> The assessments have been entirely automated using Natural Language Processing, thus greatly reducing burden on teachers (with little to no work on their part) while presenting to students a concise summary of lessons. The automation compartmentalizes a chapter into sections and brings to you a fun game based on these sectionalized keywords. The project seeks to inspire true learning amongst students as the student maps the keywords to the concept. 
 
-We also have a fun series of Vocabulary Builder Quizzes. This is the only aspect requiring input from the teacher; a list of words in JPEG/ PNG format.
+> We also have a fun series of Vocabulary Builder Quizzes. This is the only aspect requiring input from the teacher; a list of words in JPEG/ PNG format.
 We thus hope to help the student revise concepts comprehensively and aid learning.
 
 ---
