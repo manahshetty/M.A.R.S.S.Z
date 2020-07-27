@@ -13,7 +13,7 @@ With this _**Ruminate**_, in light of this pandemic, we seek to incentivize onli
 
 ---
 
-# ![Ruminate](https://github.com/manahshetty/Bamboozled/blob/master/Front%20End%20Files/IMAGES/logo.png)Ruminate
+# Ruminate
 
 _**Theme-Name**_ : Education
 
