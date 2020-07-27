@@ -10,7 +10,7 @@ Application_Type: "Website"
 
 Hey! We're just a bunch of sophomores aspiring to channel technology towards the empowerment of the world today. We seek to add value to the quality of life with simplistic yet creative innovations.
 
-With this _**Ruminate**_, in light of this pandemic, we seek to incentivize online education with fun assessments while creating an automation software to extract keywords from a text and aptly summarize lessons. We believe this idea could spark interest in students over virtual education too and hence go a long way in empowering the youth and the future.
+With _**Ruminate**_, in light of this pandemic, we seek to incentivize online education with fun assessments while creating an automation software to extract keywords from a text and aptly summarize lessons. We believe this idea could spark interest in students over virtual education too and hence go a long way in empowering the youth and the future.
 
 ---
 
@@ -48,7 +48,7 @@ _**Explanatory Video-Link**_:
 
 # Araz Sharma
 
-_**Role-In-Team**_  : (NLP), Backend Developer
+_**Role-In-Team**_  : Automation Programs, Backend Developer
 
 _**Working-Stack**_ : Python, PHP, SQL
 
@@ -57,7 +57,7 @@ _**University/School**_ : PES University, Bengaluru
 
 # Manah Shetty
 
-_**Role-In-Team**_  : (NLP), Front End Developer
+_**Role-In-Team**_  : Automation Programs, Front End Developer
 
 _**Working-Stack**_ : Python, HTML, CSS, Javascript, Bootstrap, jQuery
 
