@@ -36,6 +36,12 @@ We thus hope to help the student revise concepts comprehensively and aid learnin
 
 # What's next for RUMINATE?
 
+-> Host lecture videos as well.
+-> Extend beyond ncert textbooks to any and all textbooks demanded by teachers.
+-> Add to the fun with a multiplayer option, with weekly tournaments and teams pitted against each other. A team member provides his team with clues instead of the system doing so. This would further test their ability to map concepts while bringing in the extra fun of team games.
+-> A tracking methodology to keep a track of the weekly growth of students, and a leaderboard.
+
+
 ---
 
 _**Tech-Stack**_  :   Python/ HTML/ CSS/ Javascript/ Bootstrap/ jQuery/ PHP/ SQL
