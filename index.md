@@ -11,11 +11,9 @@ Hey! We're just a bunch of sophomores aspiring to channel technology towards the
 
 With this _**Ruminate**_, in light of this pandemic, we seek to incentivize online education with fun assessments while creating an automation software to extract keywords from a text and aptly summarize lessons. We believe this idea could spark interest in students over virtual education too and hence go a long way in empowering the youth and the future.
 
-![Ruminate](https://github.com/manahshetty/Bamboozled/blob/master/Front%20End%20Files/IMAGES/logo.png)
-
 ---
 
-# Project's Name
+# ![Ruminate](https://github.com/manahshetty/Bamboozled/blob/master/Front%20End%20Files/IMAGES/logo.png)Ruminate
 
 _**Theme-Name**_ : Education
 
