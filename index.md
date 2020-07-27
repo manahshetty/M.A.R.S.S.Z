@@ -37,7 +37,7 @@ We thus hope to help the student revise concepts comprehensively and aid learnin
 
 _**Tech-Stack**_  :   Python/ HTML/ CSS/ Javascript/ Bootstrap/ jQuery/ PHP/ SQL
 
-_**GitHub-Link**_ :   
+_**GitHub-Link**_ :   https://github.com/manahshetty/Bamboozled/
 
 _**Hosted-Link**_ :   
 
