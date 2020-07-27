@@ -152,14 +152,16 @@
     ques = document.getElementById("h1Question");                               //Get question
     var str = "q" + i;
     ques.innerHTML = questions[str].toUpperCase();                              //Rewrite question
-    var tries_left = document.getElementById("left"); /////////////////////////////////////////////////////////////////////////////
-    tries_left.innerHTML = "Tries Left : " + max_tries; //////////////////////////////////////////////////////////////////////
-    var max_tries_copy = max_tries;                   /////////////////////////////////////////////////////////////////
+    var tries_left = document.getElementById("left"); 
+    tries_left.innerHTML = "Tries Left : " + max_tries; 
+    var max_tries_copy = max_tries;                  
 
     function buttonClick(clicked_ID)
     {
       var btn = document.getElementById(clicked_ID);
-      tries_left.innerHTML = "Tries Left : " + (--max_tries_copy);        ////////////////////////////////////////////////////
+      if(max_tries_copy>0){
+        tries_left.innerHTML = "Tries Left : " + (--max_tries_copy);        
+      }
       if ((btn.value == "1") && (unlock == 1))                                                    //Ensure re-click of button isn't counted as a try.
       {
         btn.value = "0"
