@@ -31,7 +31,7 @@ We also have a fun series of Vocabulary Builder Quizzes. This is the only aspect
 We thus hope to help the student revise concepts comprehensively and aid learning.
 ---
 
-_**Tech-Stack**_  :   Python/ HTML/ CSS/ Javascript/ PHP/ SQL
+_**Tech-Stack**_  :   Python/ HTML/ CSS/ Javascript/ Bootstrap/ jQuery/ PHP/ SQL
 
 _**GitHub-Link**_ :   
 
@@ -54,7 +54,7 @@ _**University/School**_ : PES University, Bengaluru
 
 _**Role-In-Team**_  : (NLP), Front End Developer
 
-_**Working-Stack**_ : Python, HTML, CSS, Javascript
+_**Working-Stack**_ : Python, HTML, CSS, Javascript, Bootstrap, jQuery
 
 _**University/School**_ : PES University, Bengaluru
 
@@ -74,7 +74,7 @@ _**University/School**_ : PES University, Bengaluru
 
 _**Role-In-Team**_  : Front End Developer
 
-_**Working-Stack**_ : HTML, CSS, Javascript
+_**Working-Stack**_ : HTML, CSS, Javascript, Bootstrap, jQuery
 
 _**University/School**_ : PES University, Bengaluru
 
@@ -84,7 +84,7 @@ _**University/School**_ : PES University, Bengaluru
 
 _**Role-In-Team**_  : Front End Developer
 
-_**Working-Stack**_ : HTML, CSS, Javascript
+_**Working-Stack**_ : HTML, CSS, Javascript, Bootstrap, jQuery
 
 _**University/School**_ : PES University, Bengaluru
 
