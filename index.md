@@ -33,6 +33,9 @@ _**Application-Type**_ :   Website
 > We also have a fun series of Vocabulary Builder Quizzes. This is the only aspect requiring input from the teacher; a list of words in JPEG/ PNG format.
 We thus hope to help the student revise concepts comprehensively and aid learning.
 
+
+# What's next for RUMINATE?
+
 ---
 
 _**Tech-Stack**_  :   Python/ HTML/ CSS/ Javascript/ Bootstrap/ jQuery/ PHP/ SQL
