@@ -34,6 +34,17 @@ _**Application-Type**_ :   Website
 We thus hope to help the student revise concepts comprehensively and aid learning.
 
 
+Why *Ruminate*?
+
+* Automated assessment quizzes with automated extraction of keywords section-wise.
+* Sectionized keywords help summarize and map concepts effectively.
+* Fun assessment to incentivize learning. 
+* Student mind-maps concepts enhancing learning.
+* Weekly Vocab Lists - Fun Vocab builder quizzes.
+* One-on-one communication with the admin for everyone via email
+
+
+
 # What's next for *Ruminate*?
 
 * A tracking methodology to keep a track of the weekly growth of students, and a leaderboard.
