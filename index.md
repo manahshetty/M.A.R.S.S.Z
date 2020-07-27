@@ -32,6 +32,7 @@ The assessments have been entirely automated using Natural Language Processing, 
 
 We also have a fun series of Vocabulary Builder Quizzes. This is the only aspect requiring input from the teacher; a list of words in JPEG/ PNG format.
 We thus hope to help the student revise concepts comprehensively and aid learning.
+
 ---
 
 _**Tech-Stack**_  :   Python/ HTML/ CSS/ Javascript/ Bootstrap/ jQuery/ PHP/ SQL
@@ -40,6 +41,7 @@ _**GitHub-Link**_ :
 
 _**Hosted-Link**_ :   
 
+_**Explanatory Video-Link**_:
 
 ---
 
