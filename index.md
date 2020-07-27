@@ -3,7 +3,7 @@ type: "finalist"
 title: M.A.R.S.S.Z
 name: "M.A.R.S.S.Z"
 description: "Game Changers"
-Team-Quote: "We're here to stay!"
+Team-Quote: "Away from the ordinary."
 Application_Type: "Website"
 
 ---
