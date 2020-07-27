@@ -34,7 +34,7 @@ _**Application-Type**_ :   Website
 We thus hope to help the student revise concepts comprehensively and aid learning.
 
 
-Why *Ruminate*?
+# Why *Ruminate*?
 
 * Automated assessment quizzes with automated extraction of keywords section-wise.
 * Sectionized keywords help summarize and map concepts effectively.
