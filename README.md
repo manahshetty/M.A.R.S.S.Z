@@ -150,7 +150,7 @@ signup.php & login.php are frontend files linked to Backend
 	- eng_test4.txt is one of the I/P we used to generate Synonyms in testing
 
 ### COPYRIGHT
-We will procure a Liscence Shortly
+We will procure a Licence Shortly
 
 ### KNOWN BUGS
 
