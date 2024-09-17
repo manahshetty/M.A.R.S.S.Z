@@ -139,7 +139,7 @@ signup.php & login.php are frontend files linked to Backend
 	- Image_to_Text.py converts those Images to text, which is appended to one Text File
 
    - Extract.ipynb
-      Includes the Jupyter notebook file with the NLP application to extract keywords from a text file input.
+      Includes the Jupyter notebook file with the NLP application to extract keywords from a text file input to generate quizzes.
 
    - Synonyms Generator
       This is done in 2 parts:
